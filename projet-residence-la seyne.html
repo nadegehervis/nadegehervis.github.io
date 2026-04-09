@@ -62,38 +62,17 @@ body {
  <li>Missions suivies: ESQ, APS, APD, PRO</li>
 </ul>
 
-<a href="documents/la seyne" target="_blank">
+<a href="documents/la seyne/La seyne.pdf" target="_blank">
  <button>Voir le projet en PDF</button>
 </a>
 
 </div>
 
 <div class="gallery">
-
-<img src="images/la seyne/la seyne1.JPG" onclick="openModal(this)">
-<img src="images/la seyne/la seyne2.JPG" onclick="openModal(this)">
-<img src="images/la seyne/la seyne3.JPG" onclick="openModal(this)">
-
+<img src="images/la seyne/la seyne1.JPG">
+<img src="images/la seyne/la seyne2.JPG">
+<img src="images/la seyne/la seyne3.JPG">
 </div>
-
-<footer>
-© Nadège Hervis
-</footer>
-
-<div id="modal" onclick="closeModal()">
- <img id="modal-img">
-</div>
-
-<script>
-function openModal(img) {
- document.getElementById("modal").style.display = "flex";
- document.getElementById("modal-img").src = img.src;
-}
-
-function closeModal() {
- document.getElementById("modal").style.display = "none";
-}
-</script>
 
 </body>
 </html>
