@@ -1,175 +1,919 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>Nadège Hervis Architecture - Architecte D.E.H.M.O.N.P.</title>
-    <header class="site-header">
-       <div class="header-container">
-    <img src="images/logo.JPG">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <meta charset="UTF-8">
 
-  body {
-  </div>
-    </header>
-    margin: 0;
-    font-family: Verneda, sans-serif;
-    line-height: 1.6;
-    color: #8f7e4d;
-    background: blanc;
-  }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  header {
-    position: fixed;
-    width: 100%;
-    background: #f7f1eb;
-    color: #8f7e4d;
-    padding: 20px;
-    text-align: center;
-  }
+    <title>Nadège Hervis Architecture — Architecte D.E.H.M.O.N.P.</title>
 
-  nav {
-    display: flex;
-    justify-content: center;
-    background: #8f7e4d;
-  }
+    <style>
 
-  nav a {
-    color: #8f7e4d;
-    padding: 10px;
-    text-decoration: none;
-  }
+        /* =========================
+           RÉGLAGES GÉNÉRAUX
+           ========================= */
 
-  nav a:hover {
-   background: #8f7e4d;
-  }
+        * {
+            box-sizing: border-box;
+        }
 
-  section {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
+        html {
+            scroll-behavior: smooth;
+        }
 
-  .hero {
-    text-align: center;
-    padding: 0px;
-    background: #8f7e4d;
-  }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #4f4a42;
+            background: #ffffff;
+        }
 
-  .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
 
-  .project {
-    border: 1px solid #f7f1eb;
-    padding: 10px;
-  }
+        /* =========================
+           EN-TÊTE
+           ========================= */
 
-   .project {
-    border: none;
-    transition: transform 0.3s;
-  }
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
 
-    .project:hover {
-    transform: scale(1.03);
-  }
+            width: 100%;
 
-  .project img {
-    width: 100%;
-  }
+            background: #ffffff;
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #f7f1eb;
-    color: #8f7e4d;
-  }
-</style>
+            border-bottom: 1px solid #e6e1d8;
+
+            padding: 18px 40px;
+        }
+
+
+        .header-container {
+            max-width: 1400px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 35px;
+        }
+
+
+        .logo {
+            height: 65px;
+
+            width: auto;
+
+            display: block;
+        }
+
+
+        .brand {
+            flex: 1;
+        }
+
+
+        .brand h1 {
+            margin: 0;
+
+            color: #8f7e4d;
+
+            font-size: 23px;
+
+            font-weight: 400;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+
+        .brand p {
+            margin: 3px 0 0;
+
+            color: #777065;
+
+            font-size: 12px;
+
+            letter-spacing: 1.2px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
+        nav {
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+        }
+
+
+        nav a {
+            color: #4f4a42;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+            transition: color 0.25s ease;
+        }
+
+
+        nav a:hover {
+            color: #8f7e4d;
+        }
+
+
+        /* =========================
+           PAGE D'ACCUEIL
+           ========================= */
+
+        .hero {
+            min-height: 65vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 100px 30px;
+
+            background: #f7f1eb;
+        }
+
+
+        .hero h2 {
+            max-width: 900px;
+
+            margin: 0 0 20px;
+
+            color: #8f7e4d;
+
+            font-size: clamp(30px, 5vw, 58px);
+
+            font-weight: 300;
+
+            line-height: 1.15;
+
+            letter-spacing: 1px;
+        }
+
+
+        .hero p {
+            margin: 0;
+
+            color: #625b51;
+
+            font-size: 15px;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        /* =========================
+           SECTIONS
+           ========================= */
+
+        section:not(.hero) {
+
+            padding: 90px 30px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        section h2 {
+
+            margin-bottom: 35px;
+
+            color: #8f7e4d;
+
+            font-size: 30px;
+
+            font-weight: 400;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================
+           À PROPOS
+           ========================= */
+
+        #about p {
+
+            max-width: 850px;
+
+            font-size: 17px;
+
+            line-height: 1.9;
+        }
+
+
+        /* =========================
+           PORTFOLIO
+           ========================= */
+
+        .portfolio-intro {
+
+            max-width: 800px;
+
+            margin-bottom: 45px;
+
+            color: #6b655d;
+        }
+
+
+        .portfolio {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 35px;
+        }
+
+
+        .project {
+
+            background: #ffffff;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+        }
+
+
+        .project:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .project-image {
+
+            width: 100%;
+
+            aspect-ratio: 4 / 3;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .project-content {
+
+            padding: 22px 5px 10px;
+        }
+
+
+        .project h3 {
+
+            margin: 0 0 8px;
+
+            color: #4f4a42;
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+
+        .project h3 a {
+
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+
+        .project h3 a:hover {
+
+            color: #8f7e4d;
+        }
+
+
+        .project p {
+
+            margin: 0;
+
+            color: #777065;
+
+            font-size: 14px;
+        }
+
+
+        .category {
+
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            color: #8f7e4d;
+
+            font-size: 11px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================
+           CONTACT
+           ========================= */
+
+        #contact {
+
+            background: #f7f1eb;
+
+            max-width: none;
+
+            padding-left: 10%;
+
+            padding-right: 10%;
+        }
+
+
+        #contact a {
+
+            color: #8f7e4d;
+
+            text-decoration: none;
+        }
+
+
+        #contact a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           PIED DE PAGE
+           ========================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 30px;
+
+            background: #ffffff;
+
+            border-top: 1px solid #e6e1d8;
+
+            color: #777065;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           VERSION MOBILE
+           ========================= */
+
+        @media (max-width: 800px) {
+
+            .site-header {
+
+                padding: 15px 20px;
+            }
+
+
+            .header-container {
+
+                flex-wrap: wrap;
+
+                gap: 15px;
+            }
+
+
+            .logo {
+
+                height: 50px;
+            }
+
+
+            .brand {
+
+                min-width: 200px;
+            }
+
+
+            .brand h1 {
+
+                font-size: 17px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .brand p {
+
+                font-size: 10px;
+            }
+
+
+            nav {
+
+                width: 100%;
+
+                justify-content: center;
+
+                padding-top: 10px;
+
+                border-top: 1px solid #eee;
+
+                gap: 18px;
+            }
+
+
+            nav a {
+
+                font-size: 10px;
+            }
+
+
+            .hero {
+
+                min-height: 55vh;
+
+                padding: 80px 25px;
+            }
+
+
+            section:not(.hero) {
+
+                padding: 65px 22px;
+            }
+
+
+            .portfolio {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-<header>
-<h1>Nadège Hervis Architecture</h1>
-<p>Nadège Hervis Architecte D.E.H.M.O.N.P.</p>
-</header>
 
-<nav>
-<a href="#about">À propos</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
-</nav>
+    <!-- =========================
+         EN-TÊTE
+         ========================= -->
 
-<section class="hero">
-<h2>Concevoir des espaces uniques et durables</h2>
-<p>Architecture contemporaine • Projets résidentiels • Réhabilitation</p>
-</section>
+    <header class="site-header">
 
-<section id="about">
-<h2>À propos</h2>
-<p>
-  Architecte passionnée, je conçois des espaces alliant esthétique,
-  fonctionnalité et durabilité. Mon approche est centrée sur les besoins
-  des utilisateurs et l'intégration du projet dans le site, pour un seul but: 
-  "créer une architecture qui agit sur les émotions". 
-</p>
-</section>
+        <div class="header-container">
 
-<section id="portfolio">
-<h2>Portfolio</h2>
 
-<div class="portfolio">
+            <a href="index.html">
 
-  <div class="project">
-    <img src="images/la seyne/la seyne1.JPG">
-    <a href="projet-residence-la seyne.html">
-    <h3>Réalisation de 19 logements collectifs</h3>
-    </a>
-    <p>"VILLA HELIOS"</p>
-  </div>
+                <img
+                    src="images/logo.JPG"
+                    alt="Logo Nadège Hervis Architecture"
+                    class="logo"
+                >
 
-    <div class="project">
-    <img src="images/marius/marius1.JPG">
-    <a href="projet-residence-marius.html">
-    <h3>Réalisation de 13 logements collectifs et 1 local professionnel</h3>
-    </a>
-    <p>"MARIUS"</p>
-  </div>
+            </a>
 
-  <div class="project">
-    <img src="Portfolio Nadege Hervis 2026 site internet_ravalement de façades et étancheité.pdf/400x300" alt="">
-    <h3>Réhabilitations de bâtiments</h3>
-    <p>Ravalement de façades et étancheité des terrasses de logements collectifs.</p>
-  </div>
 
-  <div class="project">
-    <img src="Portfolio Nadege Hervis 2026 site internet_projet de rehabilitation d'appartements.pdf/400x300" alt="">
-    <h3>Réhabilitation de logements</h3>
-    <p>Aménagement d'espaces.</p>
-  </div>
+            <div class="brand">
 
-   <div class="project">
-    <img src="Portfolio Nadege Hervis 2026 site internet_projet d'extension.pdf/400x300" alt="">
-    <h3>Maisons individuelles</h3>
-    <p>Extension d'une maison individuelle.</p>
-  </div>
+                <h1>
+                    Nadège Hervis Architecture
+                </h1>
 
-</div>
+                <p>
+                    Architecte D.E.H.M.O.N.P.
+                </p>
 
-</section>
+            </div>
 
-<section id="contact">
-<h2>Contact</h2>
-<p>Email : nadege.hervis@yahoo.fr</p>
-<p>LinkedIn : www.linkedin.com/in/nadège-hervis-78b490229</p>
-</section>
 
-<footer>
-<p>© 2026 Nadège Hervis Architecture</p>
-</footer>
+            <nav>
+
+                <a href="#about">
+                    À propos
+                </a>
+
+                <a href="#portfolio">
+                    Portfolio
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         ACCUEIL
+         ========================= -->
+
+    <section class="hero">
+
+        <h2>
+            Concevoir des espaces uniques et durables
+        </h2>
+
+        <p>
+            Architecture contemporaine
+            • Projets résidentiels
+            • Réhabilitation
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         À PROPOS
+         ========================= -->
+
+    <section id="about">
+
+        <h2>
+            À propos
+        </h2>
+
+
+        <p>
+
+            Architecte passionnée, je conçois des espaces alliant
+            esthétique, fonctionnalité et durabilité.
+
+            Mon approche est centrée sur les besoins des utilisateurs
+            et l'intégration du projet dans son site.
+
+            <strong>
+                Créer une architecture qui agit sur les émotions.
+            </strong>
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PORTFOLIO
+         ========================= -->
+
+    <section id="portfolio">
+
+        <h2>
+            Portfolio
+        </h2>
+
+
+        <p class="portfolio-intro">
+
+            Découvrez une sélection de projets réalisés dans les domaines
+            du logement, de la réhabilitation et du réaménagement.
+
+        </p>
+
+
+        <div class="portfolio">
+
+
+            <!-- =====================
+                 PROJET 1
+                 ===================== -->
+
+            <article class="project">
+
+
+                <img
+                    src="images/la seyne/la seyne1.JPG"
+                    alt="Villa Helios — 19 logements collectifs"
+                    class="project-image"
+                >
+
+
+                <div class="project-content">
+
+                    <span class="category">
+                        Logements
+                    </span>
+
+
+                    <h3>
+
+                        <a href="projet-residence-la%20seyne.html">
+
+                            Réalisation de 19 logements collectifs
+
+                        </a>
+
+                    </h3>
+
+
+                    <p>
+                        « VILLA HELIOS »
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =====================
+                 PROJET 2
+                 ===================== -->
+
+            <article class="project">
+
+
+                <img
+                    src="images/marius/marius1.JPG"
+                    alt="Marius — 13 logements collectifs"
+                    class="project-image"
+                >
+
+
+                <div class="project-content">
+
+                    <span class="category">
+                        Logements
+                    </span>
+
+
+                    <h3>
+
+                        <a href="projet-residence-marius.html">
+
+                            Réalisation de 13 logements collectifs
+                            et 1 local professionnel
+
+                        </a>
+
+                    </h3>
+
+
+                    <p>
+                        « MARIUS »
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =====================
+                 PROJET 3
+                 ===================== -->
+
+            <article class="project">
+
+
+                <div
+                    class="project-image"
+                    style="
+                        background:#e8e2d9;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    "
+                >
+
+                    <span style="color:#8f7e4d;">
+                        RÉHABILITATION
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="category">
+                        Réhabilitations
+                    </span>
+
+
+                    <h3>
+                        Réhabilitation de bâtiments
+                    </h3>
+
+
+                    <p>
+                        Ravalement de façades et étanchéité
+                        des terrasses de logements collectifs.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =====================
+                 PROJET 4
+                 ===================== -->
+
+            <article class="project">
+
+
+                <div
+                    class="project-image"
+                    style="
+                        background:#e8e2d9;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    "
+                >
+
+                    <span style="color:#8f7e4d;">
+                        RÉAMÉNAGEMENT
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="category">
+                        Réaménagements
+                    </span>
+
+
+                    <h3>
+                        Réhabilitation de logements
+                    </h3>
+
+
+                    <p>
+                        Aménagement et transformation
+                        des espaces intérieurs.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =====================
+                 PROJET 5
+                 ===================== -->
+
+            <article class="project">
+
+
+                <div
+                    class="project-image"
+                    style="
+                        background:#e8e2d9;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    "
+                >
+
+                    <span style="color:#8f7e4d;">
+                        EXTENSION
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="category">
+                        Logements
+                    </span>
+
+
+                    <h3>
+                        Maisons individuelles
+                    </h3>
+
+
+                    <p>
+                        Extension d'une maison individuelle.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+         ========================= -->
+
+    <section id="contact">
+
+        <h2>
+            Contact
+        </h2>
+
+
+        <p>
+
+            Email :
+
+            <a href="mailto:nadege.hervis@yahoo.fr">
+
+                nadege.hervis@yahoo.fr
+
+            </a>
+
+        </p>
+
+
+        <p>
+
+            LinkedIn :
+
+            <a
+                href="https://www.linkedin.com/in/nadège-hervis-78b490229"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                Nadège Hervis
+
+            </a>
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PIED DE PAGE
+         ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Nadège Hervis Architecture
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>
