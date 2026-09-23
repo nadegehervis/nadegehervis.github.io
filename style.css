@@ -19,9 +19,17 @@
  font-weight: 500;
 }
 
-.bellavista-image { width: 100%; text-align: center; } 
-.bellavista-image img { 
+.gallery { 
+ width: 100%; 
+ text-align: 
+ center; 
+ margin: 30px auto; } 
+
+.gallery img { 
  display: block; 
- margin: 0 auto; 
- max-width: 60%; 
- height: auto; }
+ width: 60%; 
+ max-width: 700px; 
+ height: auto; 
+ margin: 
+ 0 auto;
+}
