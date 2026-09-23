@@ -18,18 +18,3 @@
  font-size: 24px;
  font-weight: 500;
 }
-
-.gallery { 
- width: 100%; 
- text-align: 
- center; 
- margin: 30px auto; } 
-
-.gallery img { 
- display: block; 
- width: 60%; 
- max-width: 700px; 
- height: auto; 
- margin: 
- 0 auto;
-}
