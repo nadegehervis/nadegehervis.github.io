@@ -14,10 +14,18 @@ body {
   color: #8f7e4d;
 }
 
+```css
 /* Grande image en haut */
 .hero {
-  height: 120vh;
-  background: url('images/darkebira/darkebira1.jpg') center/cover;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  background-image: url('images/darkebira/darkebira1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 16 / 9;
+  background-color: white;
 }
 
 /* Bloc texte */
@@ -41,7 +49,10 @@ body {
   max-width: 700px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
+```
+
 
 </style>
 </head>
