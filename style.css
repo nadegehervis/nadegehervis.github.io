@@ -19,7 +19,9 @@
  font-weight: 500;
 }
 
-.bellavista2.JPG {
- display: block;
- margin:0 auto;
- }
+.bellavista-image { width: 100%; text-align: center; } 
+.bellavista-image img { 
+ display: block; 
+ margin: 0 auto; 
+ max-width: 60%; 
+ height: auto; }
