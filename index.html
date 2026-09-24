@@ -40,26 +40,19 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-
             width: 100%;
-
             background: #ffffff;
-
             border-bottom: 1px solid #e6e1d8;
-
             padding: 18px 40px;
         }
 
 
         .header-container {
             max-width: 1400px;
-
             margin: 0 auto;
 
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
 
             gap: 35px;
@@ -68,9 +61,7 @@
 
         .logo {
             height: 65px;
-
             width: auto;
-
             display: block;
         }
 
@@ -86,11 +77,9 @@
             color: #8f7e4d;
 
             font-size: 23px;
-
             font-weight: 400;
 
             letter-spacing: 3px;
-
             text-transform: uppercase;
         }
 
@@ -101,7 +90,6 @@
             color: #777065;
 
             font-size: 12px;
-
             letter-spacing: 1.2px;
         }
 
@@ -112,9 +100,7 @@
 
         nav {
             display: flex;
-
             align-items: center;
-
             gap: 25px;
         }
 
@@ -125,7 +111,6 @@
             text-decoration: none;
 
             font-size: 12px;
-
             letter-spacing: 1.2px;
 
             text-transform: uppercase;
@@ -147,11 +132,9 @@
             min-height: 65vh;
 
             display: flex;
-
             flex-direction: column;
 
             justify-content: center;
-
             align-items: center;
 
             text-align: center;
@@ -195,7 +178,6 @@
            ========================= */
 
         section:not(.hero) {
-
             padding: 90px 30px;
 
             max-width: 1200px;
@@ -205,7 +187,6 @@
 
 
         section h2 {
-
             margin-bottom: 35px;
 
             color: #8f7e4d;
@@ -223,103 +204,85 @@
         /* =========================
            AGENCE
            ========================= */
-        
-            #about {
-             max-width: 1200px;
+
+        #about {
+            max-width: 1200px;
         }
 
-            .agence-content {
-             display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 65px;
+
+        .agence-content {
+            display: grid;
+
+            grid-template-columns: 180px 1fr;
+
+            gap: 55px;
+
             align-items: start;
-            }
-
-.agence-photo {
-    width: 120px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    object-position: center top;
-}
+        }
 
 
-.agence-texte {
-    max-width: 800px;
-}
+        /* Photo de Nadège */
+
+        .agence-photo {
+            width: 120px;
+            height: auto;
+
+            max-width: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            object-position: center top;
+        }
 
 
-/* Nom de l'agence */
-
-.agence-nom {
-    margin-top: 0;
-    margin-bottom: 22px;
-    color: #8f7e4d;
-    font-size: 25px !important;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+        .agence-texte {
+            max-width: 800px;
+        }
 
 
-/* Citation */
+        /* Nom de l'agence */
 
-.agence-citation {
-    margin-top: 0;
-    margin-bottom: 28px;
-    color: #8f7e4d;
-    font-size: 18px !important;
-    font-style: italic;
-    line-height: 1.7 !important;
-}
+        .agence-nom {
+            margin-top: 0;
+            margin-bottom: 20px;
 
+            color: #8f7e4d;
 
-/* Texte courant */
+            font-size: 25px !important;
 
-.agence-texte p:not(.agence-nom):not(.agence-citation) {
-    font-size: 17px;
-    line-height: 1.9;
-    margin-bottom: 25px;
-}
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
 
 
-/* =========================
-   MOBILE
-   ========================= */
+        /* Citation */
 
-@media (max-width: 800px) {
+        .agence-citation {
+            margin-top: 0;
+            margin-bottom: 28px;
 
-    .agence-content {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
+            color: #8f7e4d;
 
-.agence-photo {
-    width: 110px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
+            font-size: 18px !important;
+
+            font-style: italic;
+
+            line-height: 1.7 !important;
+        }
 
 
-    .agence-texte {
-        max-width: 100%;
-    }
+        /* Texte courant */
 
-    .agence-nom {
-        font-size: 23px !important;
-        text-align: left;
-    }
+        .agence-texte p:not(.agence-nom):not(.agence-citation) {
+            font-size: 17px;
 
-    .projets {
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
+            line-height: 1.9;
 
-.project-image {
-    width: 100%;
-    height: 200px;
-}
+            margin-bottom: 25px;
+        }
 
 
         /* =========================
@@ -327,7 +290,6 @@
            ========================= */
 
         .projets-intro {
-
             max-width: 800px;
 
             margin-bottom: 45px;
@@ -336,15 +298,20 @@
         }
 
 
-.projets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 35px;
-}
+        /* Grille de 3 colonnes */
 
+        .projets {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 55px 35px;
+        }
+
+
+        /* Chaque projet */
 
         .project {
-
             background: #ffffff;
 
             overflow: hidden;
@@ -356,7 +323,6 @@
 
 
         .project:hover {
-
             transform: translateY(-5px);
 
             box-shadow:
@@ -364,37 +330,35 @@
         }
 
 
-.project-image {
-    display: block;
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    object-position: center;
-    margin: 0 auto;
-}
+        /* =========================
+           PETITES VIGNETTES
+           ========================= */
 
-.project-content {
-    padding: 18px 5px 5px;
-}
+        .project-image {
+            display: block;
 
-.project h3 {
-    margin: 0 0 6px;
-    color: #4f4a42;
-    font-size: 16px;
-    font-weight: 500;
-}
+            width: 180px;
+            height: 140px;
 
-.project p {
-    margin: 0;
-    color: #777065;
-    font-size: 13px;
-}
+            object-fit: contain;
+
+            object-position: center;
+
+            margin: 0 auto;
+        }
+
+
+        /* Texte sous les images */
+
+        .project-content {
+            padding: 18px 5px 5px;
+        }
+
 
         .category {
-
             display: inline-block;
 
-            margin-bottom: 10px;
+            margin-bottom: 8px;
 
             color: #8f7e4d;
 
@@ -404,26 +368,57 @@
 
             text-transform: uppercase;
         }
-    
+
+
+        .project h3 {
+            margin: 0 0 6px;
+
+            color: #4f4a42;
+
+            font-size: 16px;
+
+            font-weight: 500;
+
+            line-height: 1.4;
+        }
+
+
+        .project h3 a {
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+
+        .project h3 a:hover {
+            color: #8f7e4d;
+        }
+
+
+        .project p {
+            margin: 0;
+
+            color: #777065;
+
+            font-size: 13px;
+        }
+
 
         /* =========================
            CONTACT
            ========================= */
 
         #contact {
-
             background: #f7f1eb;
 
             max-width: none;
 
             padding-left: 10%;
-
             padding-right: 10%;
         }
 
 
         #contact a {
-
             color: #8f7e4d;
 
             text-decoration: none;
@@ -431,7 +426,6 @@
 
 
         #contact a:hover {
-
             text-decoration: underline;
         }
 
@@ -441,7 +435,6 @@
            ========================= */
 
         footer {
-
             text-align: center;
 
             padding: 30px;
@@ -463,13 +456,11 @@
         @media (max-width: 800px) {
 
             .site-header {
-
                 padding: 15px 20px;
             }
 
 
             .header-container {
-
                 flex-wrap: wrap;
 
                 gap: 15px;
@@ -477,19 +468,16 @@
 
 
             .logo {
-
                 height: 50px;
             }
 
 
             .brand {
-
                 min-width: 200px;
             }
 
 
             .brand h1 {
-
                 font-size: 17px;
 
                 letter-spacing: 2px;
@@ -497,13 +485,11 @@
 
 
             .brand p {
-
                 font-size: 10px;
             }
 
 
             nav {
-
                 width: 100%;
 
                 justify-content: center;
@@ -517,28 +503,76 @@
 
 
             nav a {
-
                 font-size: 10px;
             }
 
 
-            .hero {
+            /* Accueil */
 
+            .hero {
                 min-height: 55vh;
 
                 padding: 80px 25px;
             }
 
 
-            section:not(.hero) {
+            /* Sections */
 
+            section:not(.hero) {
                 padding: 65px 22px;
             }
 
 
-            .projets {
+            /* =====================
+               AGENCE MOBILE
+               ===================== */
 
+            .agence-content {
                 grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+
+            .agence-photo {
+                width: 110px;
+
+                margin: 0 auto;
+            }
+
+
+            .agence-texte {
+                max-width: 100%;
+            }
+
+
+            .agence-nom {
+                font-size: 23px !important;
+
+                text-align: left;
+            }
+
+
+            .agence-citation {
+                font-size: 17px !important;
+            }
+
+
+            /* =====================
+               PROJETS MOBILE
+               ===================== */
+
+            .projets {
+                grid-template-columns: 1fr;
+
+                gap: 45px;
+            }
+
+
+            .project-image {
+                width: 180px;
+
+                height: 140px;
             }
 
         }
@@ -621,7 +655,6 @@
             Maisons individuelles
             • Logements collectifs
             • Etablissements Recevant du Public
-            
         </p>
 
     </section>
@@ -634,74 +667,83 @@
 
     <section id="about">
 
-    <h2>
-        Agence
-    </h2>
+        <h2>
+            Agence
+        </h2>
 
-    <div class="agence-content">
 
-        <div class="agence-image">
+        <div class="agence-content">
 
-            <img
-                src="images/nadege-hervis.jpg"
-                alt="Nadège Hervis, architecte"
-                class="agence-photo"
-            >
+
+            <!-- PHOTO -->
+
+            <div class="agence-image">
+
+                <img
+                    src="images/nadege-hervis.jpg"
+                    alt="Nadège Hervis, architecte"
+                    class="agence-photo"
+                >
+
+            </div>
+
+
+            <!-- TEXTE -->
+
+            <div class="agence-texte">
+
+
+                <p class="agence-nom">
+                    Nadège Hervis Architecture
+                </p>
+
+
+                <p class="agence-citation">
+                    « Derrière chaque projet, il y a une envie,
+                    un besoin, un rêve. »
+                </p>
+
+
+                <p>
+                    Notre agence d'architecture vous aide à le
+                    concrétiser de la conception à la réalisation
+                    avec écoute et passion.
+                </p>
+
+
+                <p>
+                    Nadège Hervis est une architecte passionnée.
+                    Elle s'attache à concevoir des espaces alliant
+                    esthétique, fonctionnalité et durabilité.
+                </p>
+
+
+                <p>
+                    Après un BTS en Agencement de l'Environnement
+                    Architectural au lycée Benoît Fourneyron de
+                    Saint-Etienne, elle a été diplômée de l'École
+                    Nationale Supérieure d'Architecture de Marseille
+                    Luminy en 2012 et a exercé au sein de différentes
+                    agences d'architecture à Marseille, avant
+                    d'ouvrir en 2020 sa propre structure.
+                </p>
+
+
+                <p>
+                    Ces expériences lui ont permis d'acquérir une
+                    sensibilité à l'architecture qui comprend le site,
+                    le programme et les différentes contraintes,
+                    notamment techniques, économiques et réglementaires,
+                    qu'elle met aujourd'hui au service de ses clients.
+                </p>
+
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="agence-texte">
-
-            <p class="agence-nom">
-                Nadège Hervis Architecture
-            </p>
-
-
-            <p class="agence-citation">
-                « Derrière chaque projet, il y a une envie,
-                un besoin, un rêve. »
-            </p>
-
-
-            <p>
-                Notre agence d'architecture vous aide à le
-                concrétiser de la conception à la réalisation
-                avec écoute et passion.
-            </p>
-
-
-            <p>
-                Nadège Hervis est une architecte passionnée.
-                Elle s'attache à concevoir des espaces alliant
-                esthétique, fonctionnalité et durabilité.
-            </p>
-
-
-            <p>
-                Après un BTS en Agencement de l'Environnement
-                Architectural au lycée Benoît Fourneyron de
-                Saint-Etienne, elle a été diplômée de l'École
-                Nationale Supérieure d'Architecture de Marseille
-                Luminy en 2012 et a exercé au sein de différentes
-                agences d'architecture à Marseille, avant
-                d'ouvrir en 2020 sa propre structure.
-            </p>
-
-
-            <p>
-                Ces expériences lui ont permis d'acquérir une
-                sensibilité à l'architecture qui comprend le site,
-                le programme et les différentes contraintes,
-                notamment techniques, économiques et réglementaires,
-                qu'elle met aujourd'hui au service de ses clients.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
 
 
     <!-- =========================
@@ -726,12 +768,9 @@
         <div class="projets">
 
 
-            <!-- =====================
-                 PROJET 1
-                 ===================== -->
+            <!-- PROJET 1 -->
 
             <article class="project">
-
 
                 <img
                     src="images/la seyne/la seyne1.JPG"
@@ -739,13 +778,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -757,24 +794,19 @@
 
                     </h3>
 
-
                     <p>
                         « VILLA HELIOS »
                     </p>
 
                 </div>
 
-
             </article>
 
 
 
-            <!-- =====================
-                 PROJET 2
-                 ===================== -->
+            <!-- PROJET 2 -->
 
             <article class="project">
-
 
                 <img
                     src="images/marius/marius1.JPG"
@@ -782,13 +814,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -801,24 +831,19 @@
 
                     </h3>
 
-
                     <p>
                         « MARIUS »
                     </p>
 
                 </div>
 
-
             </article>
 
 
 
-            <!-- =====================
-                 PROJET 3
-                 ===================== -->
+            <!-- PROJET 3 -->
 
             <article class="project">
-
 
                 <img
                     src="images/la moureale/la moureale 2.jpg"
@@ -826,13 +851,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -845,24 +868,19 @@
 
                     </h3>
 
-
                     <p>
                         « LA MOUREALE »
                     </p>
 
                 </div>
 
-
             </article>
 
 
 
-            <!-- =====================
-                 PROJET 4
-                 ===================== -->
+            <!-- PROJET 4 -->
 
             <article class="project">
-
 
                 <img
                     src="images/coteetmer/coteetmer1.JPG"
@@ -870,13 +888,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -888,24 +904,19 @@
 
                     </h3>
 
-
                     <p>
                         « COTE ET MER »
                     </p>
 
                 </div>
 
-
             </article>
 
 
 
-            <!-- =====================
-                 PROJET 5
-                 ===================== -->
+            <!-- PROJET 5 -->
 
             <article class="project">
-
 
                 <img
                     src="images/bellavista/bellavista1.JPG"
@@ -913,13 +924,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -931,23 +940,19 @@
 
                     </h3>
 
-
                     <p>
                         « BELLA VISTA »
                     </p>
 
                 </div>
 
-
             </article>
 
-            
-            <!-- =====================
-                 PROJET 6
-                 ===================== -->
+
+
+            <!-- PROJET 6 -->
 
             <article class="project">
-
 
                 <img
                     src="images/patiomontolivet/patiomontolivet1.jpg"
@@ -955,13 +960,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -973,24 +976,19 @@
 
                     </h3>
 
-
                     <p>
                         « PATIO MONTOLIVET »
                     </p>
 
                 </div>
 
-
             </article>
 
 
 
-            <!-- =====================
-                 PROJET 7
-                 ===================== -->
+            <!-- PROJET 7 -->
 
             <article class="project">
-
 
                 <img
                     src="images/lesmarguerites/lesmarguerites3.jpg"
@@ -998,13 +996,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -1016,23 +1012,19 @@
 
                     </h3>
 
-
                     <p>
                         « LES MARGUERITES »
                     </p>
 
                 </div>
 
-
             </article>
 
 
-            <!-- =====================
-                 PROJET 8
-                 ===================== -->
+
+            <!-- PROJET 8 -->
 
             <article class="project">
-
 
                 <img
                     src="images/darkebira/darkebira1.jpg"
@@ -1040,13 +1032,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -1058,23 +1048,19 @@
 
                     </h3>
 
-
                     <p>
                         « LE DAR KEBIRA »
                     </p>
 
                 </div>
 
-
             </article>
 
 
-            <!-- =====================
-                 PROJET 9
-                 ===================== -->
+
+            <!-- PROJET 9 -->
 
             <article class="project">
-
 
                 <img
                     src="images/schmidt/extension1.JPG"
@@ -1082,13 +1068,11 @@
                     class="project-image"
                 >
 
-
                 <div class="project-content">
 
                     <span class="category">
                         Logement
                     </span>
-
 
                     <h3>
 
@@ -1100,15 +1084,18 @@
 
                     </h3>
 
-
                     <p>
                         « CABRIES »
                     </p>
 
                 </div>
 
-
             </article>
+
+
+        </div>
+
+    </section>
 
 
 
