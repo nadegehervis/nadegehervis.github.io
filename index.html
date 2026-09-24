@@ -236,8 +236,9 @@
 }
 
 .agence-photo {
-    width: 200px;
+    width: 120px;
     max-width: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
     object-position: center top;
@@ -294,10 +295,12 @@
     }
 
 .agence-photo {
-    width: 170px;
+    width: 110px;
     max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
+
 
     .agence-texte {
         max-width: 100%;
@@ -307,6 +310,16 @@
         font-size: 23px !important;
         text-align: left;
     }
+
+    .projets {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+}
 
 
         /* =========================
@@ -323,15 +336,11 @@
         }
 
 
-        .projets {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(auto-fit, minmax(280px, 1fr));
-
-            gap: 35px;
-        }
+.projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 35px;
+}
 
 
         .project {
@@ -357,56 +366,29 @@
 
 .project-image {
     display: block;
-    width: 70%;
-    height: auto;
+    width: 100%;
+    height: 180px;
     object-fit: contain;
     object-position: center;
     margin: 0 auto;
 }
 
+.project-content {
+    padding: 18px 5px 5px;
+}
 
+.project h3 {
+    margin: 0 0 6px;
+    color: #4f4a42;
+    font-size: 16px;
+    font-weight: 500;
+}
 
-        .project-content {
-
-            padding: 22px 5px 10px;
-        }
-
-
-        .project h3 {
-
-            margin: 0 0 8px;
-
-            color: #4f4a42;
-
-            font-size: 18px;
-
-            font-weight: 500;
-        }
-
-
-        .project h3 a {
-
-            color: inherit;
-
-            text-decoration: none;
-        }
-
-
-        .project h3 a:hover {
-
-            color: #8f7e4d;
-        }
-
-
-        .project p {
-
-            margin: 0;
-
-            color: #777065;
-
-            font-size: 14px;
-        }
-
+.project p {
+    margin: 0;
+    color: #777065;
+    font-size: 13px;
+}
 
         .category {
 
@@ -422,7 +404,7 @@
 
             text-transform: uppercase;
         }
-
+    
 
         /* =========================
            CONTACT
