@@ -223,15 +223,89 @@
         /* =========================
            AGENCE
            ========================= */
+        
+#about {
+    max-width: 1200px;
+}
 
-        #about p {
+.agence-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 65px;
+    align-items: start;
+}
 
-            max-width: 850px;
+.agence-photo {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+}
 
-            font-size: 17px;
+.agence-texte {
+    max-width: 800px;
+}
 
-            line-height: 1.9;
-        }
+
+/* Nom de l'agence */
+
+.agence-nom {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #8f7e4d;
+    font-size: 25px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* Citation */
+
+.agence-citation {
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #8f7e4d;
+    font-size: 18px !important;
+    font-style: italic;
+    line-height: 1.7 !important;
+}
+
+
+/* Texte courant */
+
+.agence-texte p:not(.agence-nom):not(.agence-citation) {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .agence-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .agence-photo {
+        width: 220px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .agence-texte {
+        max-width: 100%;
+    }
+
+    .agence-nom {
+        font-size: 23px !important;
+        text-align: left;
+    }
 
 
         /* =========================
@@ -577,64 +651,74 @@
 
     <section id="about">
 
-        <h2>
-            Agence
-        </h2>
-        
-         <p>
+    <h2>
+        Agence
+    </h2>
 
-            Nadège Hervis Architecture
-            </strong>
+    <div class="agence-content">
 
-        </p>
+        <div class="agence-image">
 
-        <p>
+            <img
+                src="images/nadege-hervis.jpg"
+                alt="Nadège Hervis, architecte"
+                class="agence-photo"
+            >
 
-            "Derrière chaque projet, il y a une envie, un besoin, un rêve".
-            </strong>
+        </div>
 
-        </p>
 
-        <p>
+        <div class="agence-texte">
 
-            Notre agence d'architecture vous aide à le concrétiser de la conception 
-            à la réalisation avec écoute et passion.
-            </strong>
+            <p class="agence-nom">
+                Nadège Hervis Architecture
+            </p>
 
-        </p>
 
-        <p>
+            <p class="agence-citation">
+                « Derrière chaque projet, il y a une envie,
+                un besoin, un rêve. »
+            </p>
 
-            Nadège Hervis est une architecte passionnée. Elle s'attache à concevoir
-            des espaces alliant esthétique, fonctionnalité et durabilité.
-            </strong>
 
-        </p>
+            <p>
+                Notre agence d'architecture vous aide à le
+                concrétiser de la conception à la réalisation
+                avec écoute et passion.
+            </p>
 
-        <p>
-            
-            Après un BTS en Agencement de l'Environnement Architecturale 
-            au lycée Benoît Fourneyron de Saint Etienne, elle a été diplomée
-            de l'Ecole Nationale Supérieure d'Architecture de Marseille Luminy
-            en 2012 et a exercé au sein de différentes agences d'architecture à
-            Marseille, avant d'ouvrir en 2020 sa propre structure.
-            </strong>
 
-        </p>
+            <p>
+                Nadège Hervis est une architecte passionnée.
+                Elle s'attache à concevoir des espaces alliant
+                esthétique, fonctionnalité et durabilité.
+            </p>
 
-        <p>
 
-            Ces expériences lui ont permis d'acquérir une sensibilité à
-            l'architecture qui comprend le site, le programme et les
-            différentes contraintes notamment techniques, économiques
-            et réglementaires qu'elle met aujourd'hui au service de ses
-            clients.
-            </strong>
+            <p>
+                Après un BTS en Agencement de l'Environnement
+                Architectural au lycée Benoît Fourneyron de
+                Saint-Etienne, elle a été diplômée de l'École
+                Nationale Supérieure d'Architecture de Marseille
+                Luminy en 2012 et a exercé au sein de différentes
+                agences d'architecture à Marseille, avant
+                d'ouvrir en 2020 sa propre structure.
+            </p>
 
-        </p>
- 
-    </section>
 
+            <p>
+                Ces expériences lui ont permis d'acquérir une
+                sensibilité à l'architecture qui comprend le site,
+                le programme et les différentes contraintes,
+                notamment techniques, économiques et réglementaires,
+                qu'elle met aujourd'hui au service de ses clients.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
 
     <!-- =========================
