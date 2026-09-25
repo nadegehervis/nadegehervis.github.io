@@ -7,9 +7,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Nadège Hervis Architecture, agence d'architecture à Plan d'Orgon entre Alpilles et Lubéron. Maisons individuelles, logements collectifs et établissements recevant du public."
+    >
+
     <title>
-        Nadège Hervis Architecture — Agence d'architecture à Plan d'Orgon,
-        entre Alpilles et Lubéron
+        Nadège Hervis Architecture — Agence d'architecture à Plan d'Orgon
     </title>
 
 
@@ -35,6 +39,10 @@
             background: #ffffff;
         }
 
+        img {
+            max-width: 100%;
+        }
+
 
         /* =====================================================
            EN-TÊTE
@@ -51,7 +59,7 @@
 
             border-bottom: 1px solid #e6e1d8;
 
-            padding: 18px 40px;
+            padding: 15px 40px;
         }
 
 
@@ -70,9 +78,12 @@
         }
 
 
+        /* Logo légèrement agrandi */
+
         .logo {
-            height: 65px;
+            height: 78px;
             width: auto;
+
             display: block;
         }
 
@@ -142,10 +153,12 @@
 
 
         /* =====================================================
-           ACCUEIL
+           ACCUEIL / HERO
            ===================================================== */
 
         .hero {
+            position: relative;
+
             min-height: 65vh;
 
             display: flex;
@@ -160,11 +173,30 @@
 
             padding: 100px 30px;
 
-            background: #f7f1eb;
+            /*
+             * Photo du projet en arrière-plan.
+             * La surcouche beige claire crée un effet
+             * filigrane et permet de garder le texte lisible.
+             */
+
+            background-image:
+                linear-gradient(
+                    rgba(247, 241, 235, 0.78),
+                    rgba(247, 241, 235, 0.78)
+                ),
+                url("images/la seyne/laseynefond.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
         }
 
 
         .hero h2 {
+            position: relative;
+
             max-width: 900px;
 
             margin: 0 0 20px;
@@ -178,10 +210,15 @@
             line-height: 1.15;
 
             letter-spacing: 1px;
+
+            text-shadow:
+                0 1px 8px rgba(255, 255, 255, 0.35);
         }
 
 
         .hero p {
+            position: relative;
+
             margin: 0;
 
             color: #625b51;
@@ -189,6 +226,9 @@
             font-size: 15px;
 
             letter-spacing: 1.5px;
+
+            text-shadow:
+                0 1px 6px rgba(255, 255, 255, 0.5);
         }
 
 
@@ -199,7 +239,7 @@
         section:not(.hero) {
             max-width: 1200px;
 
-            margin: auto;
+            margin: 0 auto;
 
             padding: 90px 30px;
         }
@@ -242,7 +282,12 @@
         }
 
 
-        /* Photo de Nadège */
+        .agence-image {
+            display: flex;
+
+            justify-content: flex-start;
+        }
+
 
         .agence-photo {
             width: 150px;
@@ -264,8 +309,6 @@
         }
 
 
-        /* Nom de l'agence */
-
         .agence-nom {
             margin-top: 0;
 
@@ -283,8 +326,6 @@
         }
 
 
-        /* Citation */
-
         .agence-citation {
             margin-top: 0;
 
@@ -299,8 +340,6 @@
             line-height: 1.6;
         }
 
-
-        /* Texte courant */
 
         .agence-texte p:not(.agence-nom):not(.agence-citation) {
             margin-bottom: 25px;
@@ -329,12 +368,6 @@
             line-height: 1.8;
         }
 
-
-        /*
-           IMPORTANT :
-           Les projets sont maintenant organisés
-           en 3 colonnes.
-        */
 
         .projets {
             display: grid;
@@ -371,13 +404,6 @@
                 0 15px 35px rgba(0, 0, 0, 0.08);
         }
 
-
-        /* =====================================================
-           IMAGE DES PROJETS
-
-           L'image prend exactement la largeur
-           de la carte et donc du texte situé dessous.
-           ===================================================== */
 
         .project-image {
             display: block;
@@ -433,6 +459,8 @@
             color: inherit;
 
             text-decoration: none;
+
+            transition: color 0.25s ease;
         }
 
 
@@ -518,7 +546,7 @@
         @media (max-width: 800px) {
 
             .site-header {
-                padding: 15px 20px;
+                padding: 12px 20px;
             }
 
 
@@ -529,8 +557,10 @@
             }
 
 
+            /* Logo mobile légèrement agrandi */
+
             .logo {
-                height: 50px;
+                height: 60px;
             }
 
 
@@ -569,15 +599,44 @@
             }
 
 
+            /* Hero mobile */
+
             .hero {
                 min-height: 55vh;
 
                 padding: 80px 25px;
+
+                background-position: center center;
             }
 
 
+            .hero h2 {
+                font-size: clamp(30px, 9vw, 44px);
+
+                max-width: 700px;
+            }
+
+
+            .hero p {
+                max-width: 500px;
+
+                font-size: 13px;
+
+                line-height: 1.8;
+            }
+
+
+            /* Sections */
+
             section:not(.hero) {
                 padding: 65px 22px;
+            }
+
+
+            section h2 {
+                font-size: 26px;
+
+                margin-bottom: 30px;
             }
 
 
@@ -587,6 +646,11 @@
                 grid-template-columns: 1fr;
 
                 gap: 30px;
+            }
+
+
+            .agence-image {
+                justify-content: center;
             }
 
 
@@ -609,6 +673,13 @@
             }
 
 
+            .agence-texte p:not(.agence-nom):not(.agence-citation) {
+                font-size: 16px;
+
+                line-height: 1.8;
+            }
+
+
             /* Projets */
 
             .projets {
@@ -620,6 +691,90 @@
 
             .project-image {
                 width: 100%;
+            }
+
+
+            /* Contact */
+
+            #contact {
+                padding-left: 22px;
+
+                padding-right: 22px;
+            }
+
+        }
+
+
+        /* =====================================================
+           PETITS ÉCRANS
+           ===================================================== */
+
+        @media (max-width: 480px) {
+
+            .site-header {
+                padding: 10px 15px;
+            }
+
+
+            .header-container {
+                gap: 10px;
+            }
+
+
+            .logo {
+                height: 55px;
+            }
+
+
+            .brand h1 {
+                font-size: 14px;
+
+                letter-spacing: 1.5px;
+            }
+
+
+            .brand p {
+                font-size: 9px;
+
+                letter-spacing: 0.8px;
+            }
+
+
+            nav {
+                gap: 12px;
+            }
+
+
+            nav a {
+                font-size: 9px;
+
+                letter-spacing: 0.8px;
+            }
+
+
+            .hero {
+                min-height: 60vh;
+
+                padding: 70px 20px;
+            }
+
+
+            .hero h2 {
+                font-size: 32px;
+
+                line-height: 1.2;
+            }
+
+
+            .hero p {
+                font-size: 12px;
+
+                letter-spacing: 1px;
+            }
+
+
+            section:not(.hero) {
+                padding: 55px 20px;
             }
 
         }
@@ -641,7 +796,7 @@
         <div class="header-container">
 
 
-            <a href="index.html">
+            <a href="index.html" aria-label="Accueil Nadège Hervis Architecture">
 
                 <img
                     src="images/logo.jpg"
@@ -666,7 +821,7 @@
             </div>
 
 
-            <nav>
+            <nav aria-label="Navigation principale">
 
                 <a href="#about">
                     Agence
@@ -701,8 +856,10 @@
 
         <p>
             Maisons individuelles
-            • Logements collectifs
-            • Établissements Recevant du Public
+            •
+            Logements collectifs
+            •
+            Établissements Recevant du Public
         </p>
 
     </section>
@@ -723,7 +880,7 @@
         <div class="agence-content">
 
 
-            <!-- PHOTO -->
+            <!-- PHOTO DE NADÈGE -->
 
             <div class="agence-image">
 
@@ -731,6 +888,7 @@
                     src="images/nadege-hervis.jpg"
                     alt="Nadège Hervis, architecte"
                     class="agence-photo"
+                    loading="lazy"
                 >
 
             </div>
@@ -806,19 +964,15 @@
 
 
         <p class="projets-intro">
-
             Découvrez une sélection de projets réalisés dans les domaines
             du logement et de la rénovation.
-
         </p>
 
 
         <div class="projets">
 
 
-            <!-- =========================
-                 PROJET 1
-                 ========================= -->
+            <!-- PROJET 1 -->
 
             <article class="project">
 
@@ -826,6 +980,7 @@
                     src="images/la seyne/la seyne1.JPG"
                     alt="Villa Helios — 19 logements collectifs"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -849,10 +1004,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 2
-                 ========================= -->
+            <!-- PROJET 2 -->
 
             <article class="project">
 
@@ -860,6 +1012,7 @@
                     src="images/marius/marius1.JPG"
                     alt="Marius — 13 logements collectifs"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -884,10 +1037,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 3
-                 ========================= -->
+            <!-- PROJET 3 -->
 
             <article class="project">
 
@@ -895,6 +1045,7 @@
                     src="images/la moureale/la moureale 2.jpg"
                     alt="La Mouréale — 53 logements collectifs sociaux"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -919,10 +1070,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 4
-                 ========================= -->
+            <!-- PROJET 4 -->
 
             <article class="project">
 
@@ -930,6 +1078,7 @@
                     src="images/coteetmer/coteetmer1.JPG"
                     alt="Cote et mer — 40 logements collectifs"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -953,10 +1102,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 5
-                 ========================= -->
+            <!-- PROJET 5 -->
 
             <article class="project">
 
@@ -964,6 +1110,7 @@
                     src="images/bellavista/bellavista1.JPG"
                     alt="Bella Vista — 16 maisons en bande"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -987,10 +1134,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 6
-                 ========================= -->
+            <!-- PROJET 6 -->
 
             <article class="project">
 
@@ -998,6 +1142,7 @@
                     src="images/patiomontolivet/patiomontolivet1.jpg"
                     alt="Patio Montolivet — 96 logements collectifs"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -1021,10 +1166,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 7
-                 ========================= -->
+            <!-- PROJET 7 -->
 
             <article class="project">
 
@@ -1032,6 +1174,7 @@
                     src="images/lesmarguerites/lesmarguerites3.jpg"
                     alt="Les Marguerites — rénovation d'un appartement de type 3"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -1055,10 +1198,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 8
-                 ========================= -->
+            <!-- PROJET 8 -->
 
             <article class="project">
 
@@ -1066,6 +1206,7 @@
                     src="images/darkebira/darkebira1.jpg"
                     alt="Darkebira — rénovation d'un appartement de type 2"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
@@ -1089,10 +1230,7 @@
             </article>
 
 
-
-            <!-- =========================
-                 PROJET 9
-                 ========================= -->
+            <!-- PROJET 9 -->
 
             <article class="project">
 
@@ -1100,6 +1238,7 @@
                     src="images/schmidt/extension1.JPG"
                     alt="Extension d'une maison individuelle"
                     class="project-image"
+                    loading="lazy"
                 >
 
                 <div class="project-content">
