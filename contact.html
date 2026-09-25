@@ -1,630 +1,461 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="description" content="Contactez Nadège Hervis Architecture, agence d'architecture à Plan-d'Orgon, entre Alpilles et Lubéron.">
 
-    <meta
-        name="description"
-        content="Contactez Nadège Hervis, architecte D.E.H.M.O.N.P. à Plan-d'Orgon, entre Alpilles et Lubéron."
-    >
-
-    <title>
-        Nadège Hervis Architecture — Contact
-    </title>
-
+    <title>Contact | Nadège Hervis Architecture</title>
 
     <style>
-
         * {
             box-sizing: border-box;
         }
 
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-
         body {
-
             margin: 0;
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
+            font-family: Arial, Helvetica, sans-serif;
             color: #4f4a42;
-
             background: #ffffff;
         }
 
-
-        img {
-            max-width: 100%;
-        }
-
-
-        /* =====================================================
+        /* =========================
            HEADER
-           ===================================================== */
+        ========================= */
 
         .site-header {
-
             width: 100%;
-
             background: #ffffff;
-
-            border-bottom:
-                1px solid #e6e1d8;
-
-            padding:
-                15px 40px;
+            border-bottom: 1px solid #e6e1d8;
+            padding: 15px 40px;
         }
 
-
         .header-container {
-
             max-width: 1400px;
-
             margin: 0 auto;
-
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
-
             gap: 35px;
         }
 
-
         .logo {
-
             height: 78px;
-
             width: auto;
-
             display: block;
         }
 
-
         .brand {
-
             flex: 1;
         }
 
-
         .brand h1 {
-
             margin: 0;
-
             color: #8f7e4d;
-
             font-size: 23px;
-
             font-weight: 400;
-
             letter-spacing: 2px;
         }
 
-
         .brand p {
-
-            margin:
-                3px 0 0;
-
+            margin: 3px 0 0;
             color: #777065;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
         }
 
-
         nav {
-
             display: flex;
-
             align-items: center;
-
             gap: 25px;
         }
 
-
         nav a {
-
             color: #4f4a42;
-
             text-decoration: none;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
-
             text-transform: uppercase;
-
-            transition:
-                color 0.25s ease;
+            transition: color 0.2s ease;
         }
-
 
         nav a:hover,
         nav a.active {
-
             color: #8f7e4d;
         }
 
+        /* =========================
+           TITRE DE PAGE
+        ========================= */
 
-        /* =====================================================
-           CONTACT
-           ===================================================== */
-
-        .contact-page {
-
-            background: #f7f1eb;
-
-            padding:
-                90px 30px 100px;
-
-            min-height:
-                calc(100vh - 109px);
-        }
-
-
-        .contact-container {
-
-            max-width: 1100px;
-
+        .page-header {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 80px 30px 45px;
         }
 
-
-        .contact-title {
-
-            margin:
-                0 0 20px;
-
+        .page-header h2 {
+            margin: 0 0 25px;
             color: #8f7e4d;
-
-            font-size: 40px;
-
+            font-size: 34px;
             font-weight: 400;
-
             letter-spacing: 2px;
-
             text-transform: uppercase;
         }
 
-
-        .contact-intro {
-
+        .page-header p {
             max-width: 800px;
-
-            margin:
-                0 0 60px;
-
+            margin: 0;
             color: #6b655d;
+            font-size: 16px;
+            line-height: 1.8;
+        }
 
-            font-size: 17px;
+        /* =========================
+           CONTACT
+        ========================= */
 
+        .contact-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 30px 85px;
+        }
+
+        .contact-box {
+            background: #f7f1eb;
+            padding: 55px 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+        }
+
+        .contact-intro h3 {
+            margin: 0 0 25px;
+            color: #8f7e4d;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+
+        .contact-intro p {
+            margin: 0;
+            color: #6b655d;
+            font-size: 15px;
             line-height: 1.9;
         }
 
-
-        .contact-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap:
-                45px 80px;
+        .contact-details {
+            border-left: 1px solid #e1d8cd;
+            padding-left: 50px;
         }
 
-
-        .contact-block {
-
-            border-top:
-                1px solid #d8cfc5;
-
-            padding-top: 18px;
-        }
-
-
-        .contact-block h3 {
-
-            margin:
-                0 0 12px;
-
-            color: #8f7e4d;
-
-            font-size: 12px;
-
-            font-weight: 400;
-
-            letter-spacing: 1.8px;
-
-            text-transform: uppercase;
-        }
-
-
-        .contact-block p {
-
-            margin: 0;
-
+        .contact-name {
+            margin: 0 0 5px;
             color: #4f4a42;
+            font-size: 17px;
+            font-weight: 400;
+        }
 
-            font-size: 16px;
+        .contact-function {
+            margin: 0 0 25px;
+            color: #777065;
+            font-size: 13px;
+            line-height: 1.6;
+        }
 
+        .contact-details p {
+            margin: 0 0 14px;
+            color: #6b655d;
+            font-size: 14px;
             line-height: 1.7;
         }
 
-
-        .contact-block a {
-
-            color: #4f4a42;
-
+        .contact-details a {
+            color: #6b655d;
             text-decoration: none;
-
-            transition:
-                color 0.25s ease;
+            transition: color 0.2s ease;
         }
 
-
-        .contact-block a:hover {
-
+        .contact-details a:hover {
             color: #8f7e4d;
         }
 
-
-        .contact-name {
-
-            margin:
-                0 0 8px;
-
-            color: #8f7e4d;
-
-            font-size: 27px;
-
-            font-weight: 500;
-
-            letter-spacing: 1px;
+        .contact-linkedin {
+            margin-top: 25px !important;
         }
 
+        .contact-linkedin a {
+            color: #8f7e4d;
+            letter-spacing: 0.5px;
+        }
 
-        .contact-profession {
+        /* =========================
+           SEPARATION
+        ========================= */
 
-            margin:
-                0 0 45px;
+        .contact-bottom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px 80px;
+        }
 
+        .contact-bottom-line {
+            border-top: 1px solid #e6e1d8;
+            padding-top: 30px;
+        }
+
+        .contact-bottom p {
+            margin: 0;
             color: #777065;
-
-            font-size: 15px;
-
-            letter-spacing: 1px;
+            font-size: 13px;
+            line-height: 1.8;
         }
 
-
-        /* =====================================================
+        /* =========================
            FOOTER
-           ===================================================== */
+        ========================= */
 
         footer {
-
             padding: 30px;
-
             text-align: center;
-
-            border-top:
-                1px solid #e6e1d8;
-
+            border-top: 1px solid #e6e1d8;
             color: #777065;
-
             font-size: 12px;
         }
 
-
-        /* =====================================================
-           TABLET
-           ===================================================== */
+        /* =========================
+           TABLETTE
+        ========================= */
 
         @media (max-width: 900px) {
 
-            .brand h1 {
-
-                font-size: 19px;
+            .site-header {
+                padding: 15px 25px;
             }
 
+            .header-container {
+                gap: 20px;
+            }
+
+            .brand h1 {
+                font-size: 20px;
+            }
 
             nav {
-
                 gap: 16px;
             }
 
+            .contact-box {
+                gap: 45px;
+                padding: 45px;
+            }
+
+            .contact-details {
+                padding-left: 35px;
+            }
         }
 
-
-        /* =====================================================
+        /* =========================
            MOBILE
-           ===================================================== */
+        ========================= */
 
         @media (max-width: 700px) {
 
             .site-header {
-
-                padding:
-                    12px 20px;
+                padding: 15px 20px;
             }
-
 
             .header-container {
-
                 flex-wrap: wrap;
-
-                gap: 12px;
+                justify-content: center;
+                text-align: center;
             }
-
 
             .logo {
-
-                height: 60px;
+                height: 65px;
             }
-
 
             .brand {
-
-                min-width: 180px;
+                flex-basis: 100%;
             }
 
-
             .brand h1 {
-
-                font-size: 15px;
-
+                font-size: 19px;
                 letter-spacing: 1.5px;
             }
 
-
             .brand p {
-
-                font-size: 9px;
+                font-size: 11px;
             }
-
 
             nav {
-
                 width: 100%;
-
                 justify-content: center;
-
-                padding-top: 12px;
-
-                border-top:
-                    1px solid #eee;
-
-                gap: 18px;
+                flex-wrap: wrap;
+                gap: 15px;
             }
 
-
-            nav a {
-
-                font-size: 9px;
+            .page-header {
+                padding: 60px 22px 35px;
             }
 
-
-            .contact-page {
-
-                padding:
-                    60px 22px 70px;
+            .page-header h2 {
+                font-size: 27px;
             }
 
-
-            .contact-title {
-
-                font-size: 30px;
+            .page-header p {
+                font-size: 15px;
             }
 
+            .contact-section {
+                padding: 20px 22px 60px;
+            }
+
+            .contact-box {
+                display: block;
+                padding: 35px 25px;
+            }
 
             .contact-intro {
-
-                font-size: 15px;
-
-                margin-bottom: 45px;
+                margin-bottom: 40px;
             }
 
-
-            .contact-grid {
-
-                grid-template-columns: 1fr;
-
-                gap: 35px;
+            .contact-intro h3 {
+                font-size: 22px;
             }
 
-
-            .contact-name {
-
-                font-size: 24px;
+            .contact-details {
+                border-left: none;
+                border-top: 1px solid #e1d8cd;
+                padding-left: 0;
+                padding-top: 35px;
             }
 
+            .contact-bottom {
+                padding: 0 22px 60px;
+            }
+
+            footer {
+                padding: 25px 20px;
+            }
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
 <header class="site-header">
-
     <div class="header-container">
 
-
-        <a
-            href="index.html"
-            aria-label="Accueil Nadège Hervis Architecture"
-        >
-
+        <a href="index.html">
             <img
                 src="images/logo.jpg"
-                alt="Logo Nadège Hervis Architecture"
+                alt="Nadège Hervis Architecture"
                 class="logo"
             >
-
         </a>
 
-
         <div class="brand">
-
-            <h1>
-                Nadège Hervis Architecture
-            </h1>
-
-            <p>
-                Agence d'architecture à Plan-d'Orgon,
-                entre Alpilles et Lubéron
-            </p>
-
+            <h1>Nadège Hervis Architecture</h1>
+            <p>Agence d'architecture à Plan-d'Orgon, entre Alpilles et Lubéron</p>
         </div>
 
-
-        <nav
-            aria-label="Navigation principale"
-        >
-
-            <a href="index.html">
-                Accueil
-            </a>
-
-            <a href="projets.html">
-                Projets
-            </a>
-
-            <a href="agence.html">
-                Agence
-            </a>
-
-            <a
-                href="contact.html"
-                class="active"
-            >
-                Contact
-            </a>
-
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="agence.html">Agence</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
 
     </div>
-
 </header>
 
 
 <main>
 
+    <section class="page-header">
 
-    <section class="contact-page">
+        <h2>Contact</h2>
 
-        <div class="contact-container">
+        <p>
+            Vous avez un projet ? Vous souhaitez avoir des informations sur
+            un projet réalisé ? Vous désirez collaborer ?
+            Écrivez-nous... ou appelez-nous...
+        </p>
 
-
-            <h2 class="contact-title">
-                Contact
-            </h2>
-
-
-            <p class="contact-name">
-                Nadège Hervis
-            </p>
+    </section>
 
 
-            <p class="contact-profession">
-                Architecte D.E.H.M.O.N.P.
-            </p>
+    <section class="contact-section">
 
+        <div class="contact-box">
 
-            <p class="contact-intro">
-                Vous avez un projet ? Vous souhaitez avoir des informations
-                sur un projet réalisé ? Vous désirez collaborer ?
-                Écrivez-nous...ou appelez-nous...
-            </p>
+            <div class="contact-intro">
 
+                <h3>Parlons de votre projet</h3>
 
-            <div class="contact-grid">
-
-
-                <div class="contact-block">
-
-                    <h3>
-                        Adresse
-                    </h3>
-
-                    <p>
-                        350 avenue des Vergers<br>
-                        13750 Plan-d'Orgon
-                    </p>
-
-                </div>
-
-
-                <div class="contact-block">
-
-                    <h3>
-                        Téléphone
-                    </h3>
-
-                    <p>
-                        <a href="tel:+33623595124">
-                            06 23 59 51 24
-                        </a>
-                    </p>
-
-                </div>
-
-
-                <div class="contact-block">
-
-                    <h3>
-                        Email
-                    </h3>
-
-                    <p>
-                        <a href="mailto:nadege.hervis@yahoo.fr">
-                            nadege.hervis@yahoo.fr
-                        </a>
-                    </p>
-
-                </div>
-
-
-                <div class="contact-block">
-
-                    <h3>
-                        LinkedIn
-                    </h3>
-
-                    <p>
-                        <a
-                            href="https://www.linkedin.com/in/nad%C3%A8ge-hervis-78b490229"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Profil LinkedIn
-                        </a>
-                    </p>
-
-                </div>
-
+                <p>
+                    L'agence vous accompagne dans vos projets d'architecture,
+                    de la conception à la réalisation, avec une attention
+                    particulière portée au lieu, aux usages et à vos besoins.
+                </p>
 
             </div>
+
+
+            <div class="contact-details">
+
+                <p class="contact-name">
+                    Nadège Hervis
+                </p>
+
+                <p class="contact-function">
+                    Architecte D.E.H.M.O.N.P.
+                </p>
+
+                <p>
+                    350 avenue des Vergers<br>
+                    13750 Plan-d'Orgon
+                </p>
+
+                <p>
+                    <a href="tel:+33623595124">
+                        06 23 59 51 24
+                    </a>
+                </p>
+
+                <p>
+                    <a href="mailto:nadege.hervis@yahoo.fr">
+                        nadege.hervis@yahoo.fr
+                    </a>
+                </p>
+
+                <p class="contact-linkedin">
+                    <a
+                        href="https://www.linkedin.com/in/nadège-hervis-78b490229"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-bottom">
+
+        <div class="contact-bottom-line">
+
+            <p>
+                L'agence est située à Plan-d'Orgon, entre les Alpilles et le Lubéron.
+                N'hésitez pas à nous contacter pour échanger autour de votre projet.
+            </p>
 
         </div>
 
@@ -634,14 +465,8 @@
 
 
 <footer>
-
-    <p>
-        © 2026 Nadège Hervis Architecture - 350 avenue des Vergers - 13750 Plan-d'Orgon
-    </p>
-
+    © 2026 Nadège Hervis Architecture
 </footer>
 
-
 </body>
-
 </html>
