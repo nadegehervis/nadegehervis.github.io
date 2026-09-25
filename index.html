@@ -2,23 +2,17 @@
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Nadège Hervis Architecture — Agence d'architecture à Plan d'Orgon, entre Alpilles et Lubéron."
+        content="Nadège Hervis Architecture, agence d'architecture à Plan d'Orgon entre Alpilles et Lubéron."
     >
 
     <title>Nadège Hervis Architecture — Accueil</title>
 
-
     <style>
-
-        /* =====================================================
-           RÉGLAGES GÉNÉRAUX
-           ===================================================== */
 
         * {
             box-sizing: border-box;
@@ -33,48 +27,37 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #4f4a42;
             background: #ffffff;
-            line-height: 1.6;
         }
 
         img {
             max-width: 100%;
         }
 
-
-        /* =====================================================
-           EN-TÊTE
-           ===================================================== */
+        /* =========================
+           HEADER
+           ========================= */
 
         .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-
+            position: relative;
             width: 100%;
-
             background: #ffffff;
-
             border-bottom: 1px solid #e6e1d8;
-
-            padding: 12px 40px;
+            padding: 15px 40px;
         }
 
         .header-container {
             max-width: 1400px;
-
             margin: 0 auto;
 
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
 
             gap: 35px;
         }
 
         .logo {
-            height: 85px;
+            height: 78px;
             width: auto;
             display: block;
         }
@@ -85,51 +68,32 @@
 
         .brand h1 {
             margin: 0;
-
             color: #8f7e4d;
-
             font-size: 23px;
             font-weight: 400;
-
             letter-spacing: 3px;
-
             text-transform: uppercase;
         }
 
         .brand p {
             margin: 3px 0 0;
-
             color: #777065;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
         }
 
-
-        /* =====================================================
-           NAVIGATION
-           ===================================================== */
-
         nav {
             display: flex;
-
             align-items: center;
-
-            gap: 28px;
+            gap: 25px;
         }
 
         nav a {
             color: #4f4a42;
-
             text-decoration: none;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
-
             text-transform: uppercase;
-
             transition: color 0.25s ease;
         }
 
@@ -138,104 +102,99 @@
             color: #8f7e4d;
         }
 
-
-        /* =====================================================
+        /* =========================
            HERO
-           ===================================================== */
+           ========================= */
 
         .hero {
-            min-height: calc(100vh - 110px);
+            position: relative;
+            min-height: calc(100vh - 109px);
 
             display: flex;
-
             flex-direction: column;
-
             justify-content: center;
-
             align-items: center;
 
             text-align: center;
-
             padding: 100px 30px;
+
+            overflow: hidden;
 
             background-image:
                 linear-gradient(
-                    rgba(247, 241, 235, 0.70),
-                    rgba(247, 241, 235, 0.70)
+                    rgba(255, 255, 255, 0.78),
+                    rgba(255, 255, 255, 0.78)
                 ),
                 url("images/la seyne/laseynefond1.jpg");
 
             background-size: cover;
-
             background-position: center;
-
             background-repeat: no-repeat;
         }
 
-        .hero h2 {
-            max-width: 900px;
+        .hero-content {
+            max-width: 1000px;
+            position: relative;
+            z-index: 1;
+        }
 
+        .hero h2 {
             margin: 0 0 25px;
 
             color: #8f7e4d;
 
-            font-size: clamp(34px, 5vw, 60px);
-
+            font-size: clamp(36px, 5vw, 64px);
             font-weight: 300;
-
             line-height: 1.15;
-
             letter-spacing: 1px;
+
+            text-shadow:
+                0 1px 8px rgba(255, 255, 255, 0.6);
         }
 
         .hero p {
-            max-width: 800px;
-
-            margin: 0 0 35px;
+            margin: 0 0 38px;
 
             color: #625b51;
 
             font-size: 15px;
-
+            line-height: 1.8;
             letter-spacing: 1.5px;
+
+            text-shadow:
+                0 1px 6px rgba(255, 255, 255, 0.6);
         }
 
         .hero-button {
             display: inline-block;
 
-            padding: 13px 28px;
+            padding: 15px 30px;
 
-            border: 1px solid #8f7e4d;
-
-            color: #8f7e4d;
+            color: #ffffff;
+            background: #8f7e4d;
 
             text-decoration: none;
 
             font-size: 11px;
-
-            letter-spacing: 1.5px;
-
+            letter-spacing: 1.8px;
             text-transform: uppercase;
 
             transition:
                 background 0.25s ease,
-                color 0.25s ease;
+                transform 0.25s ease;
         }
 
         .hero-button:hover {
-            background: #8f7e4d;
-
-            color: #ffffff;
+            background: #75663e;
+            transform: translateY(-2px);
         }
 
-
-        /* =====================================================
-           PRÉSENTATION
-           ===================================================== */
+        /* =========================
+           INTRO
+           ========================= */
 
         .intro {
-            max-width: 1000px;
-
+            max-width: 900px;
             margin: 0 auto;
 
             padding: 90px 30px;
@@ -249,185 +208,73 @@
             color: #8f7e4d;
 
             font-size: 30px;
-
             font-weight: 400;
-
             letter-spacing: 2px;
-
             text-transform: uppercase;
         }
 
         .intro p {
-            max-width: 800px;
-
-            margin: 0 auto;
+            margin: 0;
 
             color: #6b655d;
 
             font-size: 17px;
-
             line-height: 1.9;
         }
 
-
-        /* =====================================================
-           PROJETS
-           ===================================================== */
-
-        .portfolio {
-            max-width: 1200px;
-
-            margin: 0 auto;
-
-            padding: 40px 30px 100px;
-        }
-
-        .portfolio h2 {
-            margin: 0 0 15px;
-
-            color: #8f7e4d;
-
-            font-size: 30px;
-
-            font-weight: 400;
-
-            letter-spacing: 2px;
-
-            text-transform: uppercase;
-        }
-
-        .portfolio-intro {
-            margin: 0 0 45px;
-
-            color: #6b655d;
-
-            font-size: 16px;
-        }
-
-        .projets {
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 45px 35px;
-        }
-
-        .project {
-            background: #ffffff;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-
-            box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.08);
-        }
-
-        .project-image {
-            display: block;
-
-            width: 100%;
-
-            height: auto;
-        }
-
-        .project-content {
-            padding: 18px 0 5px;
-        }
-
-        .category {
-            color: #8f7e4d;
-
-            font-size: 11px;
-
-            letter-spacing: 1.5px;
-
-            text-transform: uppercase;
-        }
-
-        .project h3 {
-            margin: 7px 0;
-
-            color: #4f4a42;
-
-            font-size: 17px;
-
-            font-weight: 500;
-
-            line-height: 1.4;
-        }
-
-        .project h3 a {
-            color: inherit;
-
-            text-decoration: none;
-        }
-
-        .project h3 a:hover {
-            color: #8f7e4d;
-        }
-
-        .project p {
-            margin: 0;
-
-            color: #777065;
-
-            font-size: 14px;
-        }
-
-
-        /* =====================================================
+        /* =========================
            FOOTER
-           ===================================================== */
+           ========================= */
 
         footer {
             padding: 30px;
 
-            border-top: 1px solid #e6e1d8;
-
             text-align: center;
 
-            color: #777065;
+            border-top: 1px solid #e6e1d8;
 
+            color: #777065;
             font-size: 12px;
         }
 
-
-        /* =====================================================
+        /* =========================
            TABLETTE
-           ===================================================== */
+           ========================= */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 900px) {
 
-            .projets {
-                grid-template-columns: repeat(2, 1fr);
+            .header-container {
+                gap: 20px;
+            }
+
+            .brand h1 {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            nav {
+                gap: 16px;
             }
 
         }
 
-
-        /* =====================================================
+        /* =========================
            MOBILE
-           ===================================================== */
+           ========================= */
 
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
 
             .site-header {
-                padding: 10px 20px;
+                padding: 12px 20px;
             }
 
             .header-container {
                 flex-wrap: wrap;
-
                 gap: 12px;
             }
 
             .logo {
-                height: 62px;
+                height: 60px;
             }
 
             .brand {
@@ -435,13 +282,13 @@
             }
 
             .brand h1 {
-                font-size: 16px;
-
-                letter-spacing: 1.8px;
+                font-size: 15px;
+                letter-spacing: 1.5px;
             }
 
             .brand p {
                 font-size: 9px;
+                letter-spacing: 0.8px;
             }
 
             nav {
@@ -449,153 +296,121 @@
 
                 justify-content: center;
 
-                padding-top: 10px;
+                padding-top: 12px;
 
                 border-top: 1px solid #eee;
 
-                gap: 20px;
+                gap: 18px;
             }
 
             nav a {
-                font-size: 10px;
+                font-size: 9px;
+                letter-spacing: 0.8px;
             }
 
             .hero {
-                min-height: calc(100vh - 140px);
-
-                padding: 70px 20px;
+                min-height: calc(100vh - 130px);
+                padding: 70px 22px;
 
                 background-position: center;
             }
 
             .hero h2 {
-                font-size: 38px;
+                font-size: 36px;
             }
 
             .hero p {
-                font-size: 13px;
-
-                line-height: 1.8;
+                font-size: 12px;
             }
 
             .intro {
-                padding: 70px 22px;
+                padding: 65px 22px;
             }
 
-            .portfolio {
-                padding: 30px 22px 70px;
+            .intro h2 {
+                font-size: 25px;
             }
 
-            .projets {
-                grid-template-columns: 1fr;
-
-                gap: 45px;
+            .intro p {
+                font-size: 15px;
             }
-
         }
 
-
-        /* =====================================================
-           PETITS ÉCRANS
-           ===================================================== */
-
         @media (max-width: 480px) {
-
-            .logo {
-                height: 58px;
-            }
-
-            .brand h1 {
-                font-size: 14px;
-            }
-
-            .brand p {
-                font-size: 8px;
-            }
-
-            nav {
-                gap: 14px;
-            }
-
-            nav a {
-                font-size: 9px;
-            }
 
             .hero h2 {
                 font-size: 31px;
             }
 
+            .hero-button {
+                padding: 14px 22px;
+            }
+
         }
 
     </style>
-
 </head>
 
 
 <body>
 
+<header class="site-header">
 
-    <!-- =====================================================
-         EN-TÊTE
-         ===================================================== -->
+    <div class="header-container">
 
-    <header class="site-header">
+        <a href="index.html" aria-label="Accueil Nadège Hervis Architecture">
 
-        <div class="header-container">
+            <img
+                src="images/logo.jpg"
+                alt="Logo Nadège Hervis Architecture"
+                class="logo"
+            >
 
-            <a href="index.html" aria-label="Accueil">
+        </a>
 
-                <img
-                    src="images/logo.jpg"
-                    alt="Logo Nadège Hervis Architecture"
-                    class="logo"
-                >
+        <div class="brand">
 
-            </a>
+            <h1>
+                Nadège Hervis Architecture
+            </h1>
 
-
-            <div class="brand">
-
-                <h1>
-                    Nadège Hervis Architecture
-                </h1>
-
-                <p>
-                    Agence d'architecture à Plan d'Orgon,
-                    entre Alpilles et Lubéron
-                </p>
-
-            </div>
-
-
-            <nav aria-label="Navigation principale">
-
-                <a href="index.html" class="active">
-                    Accueil
-                </a>
-
-                <a href="agence.html">
-                    Agence
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </nav>
+            <p>
+                Agence d'architecture à Plan d'Orgon,
+                entre Alpilles et Lubéron
+            </p>
 
         </div>
 
-    </header>
+        <nav aria-label="Navigation principale">
+
+            <a href="index.html" class="active">
+                Accueil
+            </a>
+
+            <a href="projets.html">
+                Projets
+            </a>
+
+            <a href="agence.html">
+                Agence
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
 
 
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
+<main>
 
-    <main>
+    <section class="hero">
 
-        <section class="hero">
+        <div class="hero-content">
 
             <h2>
                 Concevoir des espaces uniques et durables
@@ -609,256 +424,42 @@
                 Établissements Recevant du Public
             </p>
 
-            <a
-                href="agence.html"
-                class="hero-button"
-            >
-                Découvrir l'agence
+            <a href="projets.html" class="hero-button">
+                Découvrir nos projets
             </a>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- =================================================
-             INTRODUCTION
-             ================================================= -->
 
-        <section class="intro">
+    <section class="intro">
 
-            <h2>
-                Architecture &amp; projets
-            </h2>
-
-            <p>
-                Nadège Hervis Architecture accompagne ses clients
-                dans la conception et la réalisation de projets
-                architecturaux, de la rénovation à la construction
-                neuve, avec une attention particulière portée au
-                site, aux usages et à la qualité des espaces.
-            </p>
-
-        </section>
-
-
-        <!-- =================================================
-             PROJETS
-             ================================================= -->
-
-        <section class="portfolio">
-
-            <h2>
-                Quelques projets
-            </h2>
-
-            <p class="portfolio-intro">
-                Découvrez une sélection de réalisations de l'agence.
-            </p>
-
-
-            <div class="projets">
-
-
-                <article class="project">
-
-                    <img
-                        src="images/la seyne/la seyne1.JPG"
-                        alt="Villa Helios — 19 logements collectifs"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-laseyne.html">
-                                Réalisation de 19 logements collectifs
-                            </a>
-                        </h3>
-
-                        <p>
-                            « VILLA HELIOS »
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <img
-                        src="images/marius/marius1.JPG"
-                        alt="Marius — 13 logements collectifs"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-marius.html">
-                                Réalisation de 13 logements collectifs
-                                et 1 local professionnel
-                            </a>
-                        </h3>
-
-                        <p>
-                            « MARIUS »
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <img
-                        src="images/la moureale/la moureale 2.jpg"
-                        alt="La Mouréale — 53 logements collectifs sociaux"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-lamoureale.html">
-                                Réalisation de 53 logements collectifs
-                                sociaux
-                            </a>
-                        </h3>
-
-                        <p>
-                            « LA MOUREALE »
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <img
-                        src="images/coteetmer/coteetmer1.JPG"
-                        alt="Cote et mer — 40 logements collectifs"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-coteetmer.html">
-                                Réalisation de 40 logements collectifs
-                            </a>
-                        </h3>
-
-                        <p>
-                            « COTE ET MER »
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <img
-                        src="images/bellavista/bellavista1.JPG"
-                        alt="Bella Vista — 16 maisons en bande"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-bellavista.html">
-                                Réalisation de 16 maisons en bande
-                            </a>
-                        </h3>
-
-                        <p>
-                            « BELLA VISTA »
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <img
-                        src="images/patiomontolivet/patiomontolivet1.jpg"
-                        alt="Patio Montolivet — 96 logements collectifs"
-                        class="project-image"
-                        loading="lazy"
-                    >
-
-                    <div class="project-content">
-
-                        <span class="category">
-                            Logement
-                        </span>
-
-                        <h3>
-                            <a href="projet-residence-patiomontolivet.html">
-                                Réalisation de 96 logements collectifs
-                            </a>
-                        </h3>
-
-                        <p>
-                            « PATIO MONTOLIVET »
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
-
-    <footer>
+        <h2>
+            Une architecture à votre écoute
+        </h2>
 
         <p>
-            © 2026 Nadège Hervis Architecture
+            Derrière chaque projet, il y a une envie, un besoin,
+            un rêve. Nadège Hervis Architecture vous accompagne
+            dans la conception et la réalisation de projets
+            pensés avec attention, en tenant compte du site,
+            des usages, des contraintes et de l'identité de
+            chaque projet.
         </p>
 
-    </footer>
+    </section>
 
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Nadège Hervis Architecture
+    </p>
+
+</footer>
 
 </body>
-
 </html>
