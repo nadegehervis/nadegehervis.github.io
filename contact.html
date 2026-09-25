@@ -8,10 +8,10 @@
 
     <meta
         name="description"
-        content="Contactez Nadège Hervis Architecture, agence d'architecture à Plan d'Orgon."
+        content="Contactez Nadège HERVIS, architecte D.E.H.M.O.N.P. à Plan d'Orgon."
     >
 
-    <title>Nadège Hervis Architecture — Contact</title>
+    <title>Nadège HERVIS — Architecte D.E.H.M.O.N.P. — Contact</title>
 
 
     <style>
@@ -20,14 +20,22 @@
             box-sizing: border-box;
         }
 
+        html,
         body {
             margin: 0;
+            padding: 0;
+        }
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
             color: #4f4a42;
             background: #ffffff;
         }
 
-        /* HEADER */
+
+        /* =========================
+           HEADER
+        ========================= */
 
         .site-header {
             width: 100%;
@@ -78,6 +86,11 @@
             letter-spacing: 1.2px;
         }
 
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
         nav {
             display: flex;
             align-items: center;
@@ -100,7 +113,10 @@
             color: #8f7e4d;
         }
 
-        /* CONTACT */
+
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact-section {
             min-height: calc(100vh - 109px);
@@ -113,15 +129,18 @@
 
         .contact-container {
             width: 100%;
-            max-width: 900px;
+            max-width: 1100px;
 
             margin: 0 auto;
 
-            padding: 90px 30px;
+            padding: 90px 50px 110px;
         }
 
-        .contact-container h2 {
-            margin: 0 0 45px;
+
+        /* TITRE */
+
+        .contact-title {
+            margin: 0 0 20px;
 
             color: #8f7e4d;
 
@@ -132,10 +151,41 @@
             text-transform: uppercase;
         }
 
-        .contact-intro {
-            max-width: 700px;
 
-            margin: 0 0 45px;
+        /* IDENTITÉ */
+
+        .contact-identity {
+            margin-bottom: 70px;
+        }
+
+        .contact-identity h2 {
+            margin: 0 0 7px;
+
+            color: #4f4a42;
+
+            font-size: 25px;
+            font-weight: 400;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .contact-identity p {
+            margin: 0;
+
+            color: #777065;
+
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+
+        /* TEXTE D'INTRODUCTION */
+
+        .contact-intro {
+            max-width: 760px;
+
+            margin: 0 0 85px;
 
             color: #625b51;
 
@@ -143,14 +193,33 @@
             line-height: 1.9;
         }
 
+        .contact-intro strong {
+            color: #8f7e4d;
+            font-weight: 400;
+        }
+
+
+        /* =========================
+           INFORMATIONS
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            column-gap: 110px;
+            row-gap: 75px;
+        }
+
         .contact-item {
-            margin-bottom: 30px;
+            max-width: 500px;
         }
 
         .contact-label {
             display: block;
 
-            margin-bottom: 8px;
+            margin-bottom: 12px;
 
             color: #8f7e4d;
 
@@ -159,10 +228,17 @@
             text-transform: uppercase;
         }
 
+        .contact-item p {
+            margin: 0;
+
+            color: #625b51;
+
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
         .contact-item a {
             color: #4f4a42;
-
-            font-size: 18px;
 
             text-decoration: none;
 
@@ -173,7 +249,10 @@
             color: #8f7e4d;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             padding: 30px;
@@ -189,7 +268,10 @@
             font-size: 12px;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 700px) {
 
@@ -235,25 +317,52 @@
                 font-size: 9px;
             }
 
+
             .contact-section {
                 min-height: calc(100vh - 130px);
             }
 
             .contact-container {
-                padding: 65px 22px;
+                padding: 65px 22px 80px;
             }
 
-            .contact-container h2 {
+
+            .contact-title {
                 font-size: 27px;
-                margin-bottom: 35px;
+                margin-bottom: 18px;
             }
+
+
+            .contact-identity {
+                margin-bottom: 55px;
+            }
+
+            .contact-identity h2 {
+                font-size: 21px;
+                letter-spacing: 1px;
+            }
+
+            .contact-identity p {
+                font-size: 12px;
+            }
+
 
             .contact-intro {
+                margin-bottom: 65px;
+
                 font-size: 15px;
+                line-height: 1.8;
             }
 
-            .contact-item a {
-                font-size: 16px;
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+
+                row-gap: 55px;
+            }
+
+            .contact-item p {
+                font-size: 15px;
             }
 
         }
@@ -270,16 +379,21 @@
 
     <div class="header-container">
 
+
+        <!-- LOGO -->
+
         <a href="index.html" aria-label="Accueil">
 
             <img
                 src="images/logo.jpg"
-                alt="Logo Nadège Hervis Architecture"
+                alt="Logo Nadège HERVIS Architecture"
                 class="logo"
             >
 
         </a>
 
+
+        <!-- IDENTITÉ DU SITE -->
 
         <div class="brand">
 
@@ -295,6 +409,8 @@
         </div>
 
 
+        <!-- NAVIGATION -->
+
         <nav aria-label="Navigation principale">
 
             <a href="index.html">
@@ -309,7 +425,11 @@
                 Agence
             </a>
 
-            <a href="contact.html" class="active">
+            <a
+                href="contact.html"
+                class="active"
+                aria-current="page"
+            >
                 Contact
             </a>
 
@@ -326,44 +446,126 @@
 
         <div class="contact-container">
 
-            <h2>
+
+            <!-- TITRE -->
+
+            <h2 class="contact-title">
                 Contact
             </h2>
 
 
-            <p class="contact-intro">
-                Vous avez un projet de construction, de rénovation
-                ou d'extension ? N'hésitez pas à me contacter afin
-                d'échanger autour de vos besoins et de vos envies.
-            </p>
+            <!-- IDENTITÉ -->
 
+            <div class="contact-identity">
 
-            <div class="contact-item">
+                <h2>
+                    Nadège HERVIS
+                </h2>
 
-                <span class="contact-label">
-                    Email
-                </span>
-
-                <a href="mailto:nadege.hervis@yahoo.fr">
-                    nadege.hervis@yahoo.fr
-                </a>
+                <p>
+                    Architecte D.E.H.M.O.N.P.
+                </p>
 
             </div>
 
 
-            <div class="contact-item">
+            <!-- INTRODUCTION -->
 
-                <span class="contact-label">
-                    LinkedIn
-                </span>
+            <p class="contact-intro">
 
-                <a
-                    href="https://www.linkedin.com/in/nadège-hervis-78b490229"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Nadège Hervis
-                </a>
+                <strong>Vous avez un projet ?</strong><br>
+
+                Vous souhaitez avoir des informations sur un projet
+                réalisé ?<br>
+
+                Vous désirez collaborer ?<br>
+
+                <strong>Écrivez-nous… ou appelez-nous…</strong>
+
+            </p>
+
+
+            <!-- INFORMATIONS -->
+
+            <div class="contact-grid">
+
+
+                <!-- ADRESSE -->
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        Adresse
+                    </span>
+
+                    <p>
+                        350 avenue des Vergers<br>
+                        13750 Plan d'Orgon
+                    </p>
+
+                </div>
+
+
+                <!-- TÉLÉPHONE -->
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        Téléphone
+                    </span>
+
+                    <p>
+
+                        <a href="tel:+33623595124">
+                            06 23 59 51 24
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        Email
+                    </span>
+
+                    <p>
+
+                        <a href="mailto:nadege.hervis@yahoo.fr">
+                            nadege.hervis@yahoo.fr
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        LinkedIn
+                    </span>
+
+                    <p>
+
+                        <a
+                            href="https://www.linkedin.com/in/nadège-hervis-78b490229"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Nadège HERVIS
+                        </a>
+
+                    </p>
+
+                </div>
+
 
             </div>
 
@@ -384,4 +586,5 @@
 
 
 </body>
+
 </html>
