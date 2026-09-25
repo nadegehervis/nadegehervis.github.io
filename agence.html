@@ -1,648 +1,562 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-        content="Découvrez Nadège Hervis Architecture, architecte à Plan-d'Orgon entre Alpilles et Lubéron.">
-
-  <title>Nadège Hervis Architecture — Agence</title>
-
-  <style>
-
-    /* =========================
-       BASE
-    ========================= */
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #4f4a42;
-      background: #ffffff;
-      line-height: 1.7;
-    }
-
-
-    /* =========================
-       HEADER
-    ========================= */
-
-    .site-header {
-      width: 100%;
-      background: #ffffff;
-      border-bottom: 1px solid #e6e1d8;
-      padding: 15px 40px;
-    }
-
-    .header-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 35px;
-    }
-
-    .logo {
-      height: 78px;
-      width: auto;
-      display: block;
-    }
-
-    .brand {
-      flex: 1;
-    }
-
-    .brand h1 {
-      margin: 0;
-      color: #8f7e4d;
-      font-size: 23px;
-      font-weight: 400;
-      letter-spacing: 2px;
-    }
-
-    .brand p {
-      margin: 3px 0 0;
-      color: #777065;
-      font-size: 12px;
-      letter-spacing: 1.2px;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-
-    nav a {
-      color: #4f4a42;
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover,
-    nav a.active {
-      color: #8f7e4d;
-    }
-
-
-    /* =========================
-       TITRE DE PAGE
-    ========================= */
-
-    .page-header {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 80px 30px 45px;
-    }
-
-    .page-header h2 {
-      margin: 0 0 25px;
-      color: #8f7e4d;
-      font-size: 34px;
-      font-weight: 400;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .page-header p {
-      max-width: 800px;
-      margin: 0;
-      color: #6b655d;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-
-    /* =========================
-       PRESENTATION AGENCE
-    ========================= */
-
-    .agency-intro {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 10px 30px 75px;
-    }
-
-    .agency-intro-inner {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      align-items: start;
-      gap: 60px;
-    }
-
-    .agency-photo {
-      width: 300px;
-      max-width: 100%;
-      display: block;
-      height: auto;
-    }
-
-    .agency-intro-text {
-      padding-top: 5px;
-    }
-
-    .agency-intro-text h3 {
-      margin: 0 0 20px;
-      color: #8f7e4d;
-      font-size: 24px;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
-
-    .agency-intro-text .quote {
-      margin: 0 0 28px;
-      color: #777065;
-      font-size: 17px;
-      font-style: italic;
-      line-height: 1.8;
-    }
-
-    .agency-intro-text p {
-      margin: 0 0 18px;
-      color: #5f5a53;
-      font-size: 15px;
-      line-height: 1.85;
-    }
-
-
-    /* =========================
-       APPROCHE
-    ========================= */
-
-    .agency-approach {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 60px 30px 65px;
-      border-top: 1px solid #e6e1d8;
-    }
-
-    .agency-approach h3 {
-      margin: 0 0 22px;
-      color: #8f7e4d;
-      font-size: 25px;
-      font-weight: 400;
-      letter-spacing: 1.5px;
-    }
-
-    .approach-intro {
-      max-width: 850px;
-      margin: 0 0 45px;
-      color: #5f5a53;
-      font-size: 15px;
-      line-height: 1.85;
-    }
-
-    .approach-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 45px;
-    }
-
-    .approach-item {
-      padding-top: 16px;
-      border-top: 1px solid #8f7e4d;
-    }
-
-    .approach-item h4 {
-      margin: 0 0 12px;
-      color: #4f4a42;
-      font-size: 17px;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
-
-    .approach-item p {
-      margin: 0;
-      color: #777065;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-
-    /* =========================
-       PARCOURS
-    ========================= */
-
-    .agency-background {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 70px 30px 85px;
-    }
-
-    .agency-background h3 {
-      margin: 0 0 28px;
-      color: #8f7e4d;
-      font-size: 25px;
-      font-weight: 400;
-      letter-spacing: 1.5px;
-    }
-
-    .agency-background p {
-      margin: 0 0 20px;
-      color: #5f5a53;
-      font-size: 15px;
-      line-height: 1.9;
-    }
-
-    .agency-background p:last-child {
-      margin-bottom: 0;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      padding: 30px;
-      text-align: center;
-      border-top: 1px solid #e6e1d8;
-      color: #777065;
-      font-size: 12px;
-    }
-
-
-    /* =========================
-       TABLETTE
-    ========================= */
-
-    @media (max-width: 900px) {
-
-      .site-header {
-        padding: 15px 25px;
-      }
-
-      .header-container {
-        gap: 25px;
-      }
-
-      .logo {
-        height: 70px;
-      }
-
-      .brand h1 {
-        font-size: 20px;
-      }
-
-      nav {
-        gap: 18px;
-      }
-
-      .agency-intro-inner {
-        grid-template-columns: 260px 1fr;
-        gap: 45px;
-      }
-
-      .agency-photo {
-        width: 260px;
-      }
-
-      .approach-grid {
-        gap: 30px;
-      }
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 700px) {
-
-      .site-header {
-        padding: 15px 20px;
-      }
-
-      .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-      }
-
-      .logo {
-        height: 70px;
-      }
-
-      .brand {
-        text-align: center;
-      }
-
-      .brand h1 {
-        font-size: 19px;
-        letter-spacing: 1.5px;
-      }
-
-      .brand p {
-        font-size: 11px;
-        letter-spacing: 0.8px;
-      }
-
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px 20px;
-      }
-
-      nav a {
-        font-size: 11px;
-      }
-
-
-      .page-header {
-        padding: 60px 22px 35px;
-      }
-
-      .page-header h2 {
-        font-size: 27px;
-        margin-bottom: 20px;
-      }
-
-      .page-header p {
-        font-size: 15px;
-      }
-
-
-      .agency-intro {
-        padding: 10px 22px 55px;
-      }
-
-      .agency-intro-inner {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-      }
-
-      .agency-photo {
-        width: 280px;
-        max-width: 100%;
-        margin: 0 auto;
-      }
-
-      .agency-intro-text {
-        padding-top: 0;
-      }
-
-      .agency-intro-text h3 {
-        font-size: 22px;
-      }
-
-
-      .agency-approach {
-        padding: 50px 22px 60px;
-      }
-
-      .agency-approach h3 {
-        font-size: 22px;
-        margin-bottom: 22px;
-      }
-
-      .approach-intro {
-        margin-bottom: 35px;
-      }
-
-      .approach-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
-
-      .approach-item {
-        padding-top: 15px;
-      }
-
-
-      .agency-background {
-        padding: 60px 22px 70px;
-      }
-
-      .agency-background h3 {
-        font-size: 22px;
-      }
-
-      .agency-background p {
-        font-size: 15px;
-      }
-
-
-      footer {
-        padding: 25px 20px;
-      }
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Nadège Hervis Architecture, agence d'architecture à Plan-d'Orgon, entre Alpilles et Lubéron.">
+
+    <title>Agence | Nadège Hervis Architecture</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #4f4a42;
+            background: #ffffff;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .site-header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e6e1d8;
+            padding: 15px 40px;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        .logo {
+            height: 78px;
+            width: auto;
+            display: block;
+        }
+
+        .brand {
+            flex: 1;
+        }
+
+        .brand h1 {
+            margin: 0;
+            color: #8f7e4d;
+            font-size: 23px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .brand p {
+            margin: 3px 0 0;
+            color: #777065;
+            font-size: 12px;
+            letter-spacing: 1.2px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #4f4a42;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #8f7e4d;
+        }
+
+        /* =========================
+           TITRE DE PAGE
+        ========================= */
+
+        .page-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 30px 45px;
+        }
+
+        .page-header h2 {
+            margin: 0 0 25px;
+            color: #8f7e4d;
+            font-size: 34px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .page-header p {
+            max-width: 800px;
+            margin: 0;
+            color: #6b655d;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           PRESENTATION
+        ========================= */
+
+        .agency-intro {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 20px 30px 75px;
+        }
+
+        .agency-intro-inner {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .agency-photo {
+            width: 220px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .agency-text h3 {
+            margin: 0 0 20px;
+            color: #8f7e4d;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+
+        .agency-quote {
+            margin: 0 0 25px;
+            color: #8f7e4d;
+            font-size: 18px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .agency-text p {
+            margin: 0 0 18px;
+            color: #6b655d;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           APPROCHE
+        ========================= */
+
+        .agency-approach {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 65px 30px 75px;
+            border-top: 1px solid #e6e1d8;
+        }
+
+        .agency-approach h3 {
+            margin: 0 0 20px;
+            color: #8f7e4d;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+
+        .agency-approach-intro {
+            max-width: 850px;
+            margin: 0 0 45px;
+            color: #6b655d;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .approach-item {
+            padding-top: 20px;
+            border-top: 1px solid #8f7e4d;
+        }
+
+        .approach-item h4 {
+            margin: 0 0 12px;
+            color: #4f4a42;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .approach-item p {
+            margin: 0;
+            color: #777065;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           PARCOURS
+        ========================= */
+
+        .agency-parcours {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 30px 80px;
+        }
+
+        .agency-parcours h3 {
+            margin: 0 0 25px;
+            color: #8f7e4d;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+
+        .agency-parcours p {
+            max-width: 850px;
+            margin: 0 0 18px;
+            color: #6b655d;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e6e1d8;
+            color: #777065;
+            font-size: 12px;
+        }
+
+        /* =========================
+           TABLETTE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .site-header {
+                padding: 15px 25px;
+            }
+
+            .header-container {
+                gap: 20px;
+            }
+
+            .brand h1 {
+                font-size: 20px;
+            }
+
+            nav {
+                gap: 16px;
+            }
+
+            .agency-intro-inner {
+                grid-template-columns: 200px 1fr;
+                gap: 45px;
+            }
+
+            .agency-photo {
+                width: 200px;
+            }
+
+            .approach-grid {
+                gap: 25px;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .site-header {
+                padding: 15px 20px;
+            }
+
+            .header-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .logo {
+                height: 65px;
+            }
+
+            .brand {
+                flex-basis: 100%;
+            }
+
+            .brand h1 {
+                font-size: 19px;
+                letter-spacing: 1.5px;
+            }
+
+            .brand p {
+                font-size: 11px;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .page-header {
+                padding: 60px 22px 35px;
+            }
+
+            .page-header h2 {
+                font-size: 27px;
+            }
+
+            .page-header p {
+                font-size: 15px;
+            }
+
+            .agency-intro {
+                padding: 20px 22px 60px;
+            }
+
+            .agency-intro-inner {
+                display: block;
+            }
+
+            .agency-photo {
+                width: 200px;
+                max-width: 100%;
+                margin: 0 auto 35px;
+            }
+
+            .agency-text h3 {
+                font-size: 22px;
+            }
+
+            .agency-quote {
+                font-size: 17px;
+            }
+
+            .agency-approach {
+                padding: 55px 22px 60px;
+            }
+
+            .agency-approach h3 {
+                font-size: 22px;
+            }
+
+            .agency-approach-intro {
+                margin-bottom: 35px;
+            }
+
+            .approach-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .agency-parcours {
+                padding: 0 22px 60px;
+            }
+
+            .agency-parcours h3 {
+                font-size: 22px;
+            }
+
+            footer {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
-
-  <header class="site-header">
-
+<header class="site-header">
     <div class="header-container">
 
-      <a href="index.html" aria-label="Accueil">
-        <img
-          src="images/logo.jpg"
-          alt="Nadège Hervis Architecture"
-          class="logo"
-        >
-      </a>
+        <a href="index.html">
+            <img src="images/logo.jpg" alt="Nadège Hervis Architecture" class="logo">
+        </a>
 
-      <div class="brand">
-        <h1>Nadège Hervis Architecture</h1>
-        <p>Agence d'architecture à Plan-d'Orgon, entre Alpilles et Lubéron</p>
-      </div>
+        <div class="brand">
+            <h1>Nadège Hervis Architecture</h1>
+            <p>Agence d'architecture à Plan-d'Orgon, entre Alpilles et Lubéron</p>
+        </div>
 
-      <nav aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="agence.html" class="active">Agence</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="agence.html" class="active">Agence</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
     </div>
+</header>
 
-  </header>
 
-
-  <!-- =========================
-       CONTENU
-  ========================= -->
-
-  <main>
+<main>
 
     <section class="page-header">
+        <h2>Agence</h2>
 
-      <h2>Agence</h2>
-
-      <p>
-        Une architecture pensée pour être vécue, en lien avec le lieu,
-        les usages et les personnes qui l'habitent.
-      </p>
-
+        <p>
+            Une architecture pensée pour être vécue, en lien avec le lieu,
+            les usages et les personnes qui l'habitent.
+        </p>
     </section>
 
-
-    <!-- =========================
-         PRESENTATION
-    ========================= -->
 
     <section class="agency-intro">
 
-      <div class="agency-intro-inner">
+        <div class="agency-intro-inner">
 
-        <div>
-          <img
-            src="images/nadege-hervis.jpg"
-            alt="Nadège Hervis, architecte"
-            class="agency-photo"
-          >
+            <div>
+                <img
+                    src="images/nadege-hervis.jpg"
+                    alt="Nadège Hervis, architecte"
+                    class="agency-photo"
+                >
+            </div>
+
+            <div class="agency-text">
+
+                <h3>Nadège Hervis Architecture</h3>
+
+                <p class="agency-quote">
+                    « Derrière chaque projet, il y a une envie, un besoin, un rêve. »
+                </p>
+
+                <p>
+                    Notre agence d'architecture vous aide à le concrétiser
+                    de la conception à la réalisation avec écoute et passion.
+                </p>
+
+                <p>
+                    Nadège Hervis est une architecte passionnée.
+                    Elle s'attache à concevoir des espaces alliant esthétique,
+                    fonctionnalité et durabilité.
+                </p>
+
+                <p>
+                    Chaque projet est pensé comme une réponse singulière à son contexte.
+                    La lumière, les volumes, les matières, les usages et les relations
+                    entre les espaces sont au cœur de la réflexion.
+                </p>
+
+            </div>
+
         </div>
-
-        <div class="agency-intro-text">
-
-          <h3>Nadège Hervis Architecture</h3>
-
-          <p class="quote">
-            « Derrière chaque projet, il y a une envie, un besoin, un rêve. »
-          </p>
-
-          <p>
-            Notre agence d'architecture vous aide à le concrétiser
-            de la conception à la réalisation avec écoute et passion.
-          </p>
-
-          <p>
-            Nadège Hervis est une architecte passionnée. Elle s'attache
-            à concevoir des espaces alliant esthétique, fonctionnalité
-            et durabilité.
-          </p>
-
-          <p>
-            Chaque projet est pensé comme une réponse singulière à son
-            contexte. La lumière, les volumes, les matières, les usages
-            et les relations entre les espaces sont au cœur de la réflexion.
-          </p>
-
-        </div>
-
-      </div>
 
     </section>
 
-
-    <!-- =========================
-         APPROCHE
-    ========================= -->
 
     <section class="agency-approach">
 
-      <h3>Une approche attentive et sur mesure</h3>
+        <h3>Une approche attentive et sur mesure</h3>
 
-      <p class="approach-intro">
-        Concevoir un projet, c'est avant tout écouter. Écouter un lieu,
-        un programme, des usages, mais aussi les envies et les contraintes
-        de celles et ceux qui vont y vivre ou y travailler.
-      </p>
+        <p class="agency-approach-intro">
+            Concevoir un projet, c'est avant tout écouter. Écouter un lieu,
+            un programme, des usages, mais aussi les envies et les contraintes
+            de celles et ceux qui vont y vivre ou y travailler.
+        </p>
 
-      <div class="approach-grid">
+        <div class="approach-grid">
 
-        <div class="approach-item">
+            <div class="approach-item">
 
-          <h4>Écouter</h4>
+                <h4>Écouter</h4>
 
-          <p>
-            Comprendre les besoins, les usages, les envies et les
-            contraintes afin de construire un projet adapté à chaque situation.
-          </p>
+                <p>
+                    Comprendre les besoins, les usages, les envies et les contraintes
+                    afin de construire un projet adapté à chaque situation.
+                </p>
+
+            </div>
+
+
+            <div class="approach-item">
+
+                <h4>Concevoir</h4>
+
+                <p>
+                    Imaginer des espaces cohérents et sensibles, en travaillant
+                    les volumes, la lumière, les matières et leur relation au lieu.
+                </p>
+
+            </div>
+
+
+            <div class="approach-item">
+
+                <h4>Accompagner</h4>
+
+                <p>
+                    Être présente tout au long du projet, de la conception à la réalisation,
+                    avec une attention portée aux différentes contraintes techniques,
+                    économiques et réglementaires.
+                </p>
+
+            </div>
 
         </div>
-
-
-        <div class="approach-item">
-
-          <h4>Concevoir</h4>
-
-          <p>
-            Imaginer des espaces cohérents et sensibles, en travaillant
-            les volumes, la lumière, les matières et leur relation au lieu.
-          </p>
-
-        </div>
-
-
-        <div class="approach-item">
-
-          <h4>Accompagner</h4>
-
-          <p>
-            Être présente tout au long du projet, de la conception
-            à la réalisation, avec une attention portée aux différentes
-            contraintes techniques, économiques et réglementaires.
-          </p>
-
-        </div>
-
-      </div>
 
     </section>
 
 
-    <!-- =========================
-         PARCOURS
-    ========================= -->
+    <section class="agency-parcours">
 
-    <section class="agency-background">
+        <h3>Un parcours, une sensibilité</h3>
 
-      <h3>Un parcours, une sensibilité</h3>
+        <p>
+            Après un BTS en Agencement de l'Environnement Architectural
+            au lycée Benoît Fourneyron de Saint-Etienne, elle a été diplômée
+            de l'École Nationale Supérieure d'Architecture de Marseille Luminy en 2012.
+        </p>
 
-      <p>
-        Après un BTS en Agencement de l'Environnement Architectural
-        au lycée Benoît Fourneyron de Saint-Etienne, elle a été diplômée
-        de l'École Nationale Supérieure d'Architecture de Marseille Luminy
-        en 2012.
-      </p>
+        <p>
+            Elle a ensuite exercé au sein de différentes agences d'architecture
+            à Marseille, avant d'ouvrir en 2020 sa propre structure.
+        </p>
 
-      <p>
-        Elle a ensuite exercé au sein de différentes agences
-        d'architecture à Marseille, avant d'ouvrir en 2020
-        sa propre structure.
-      </p>
-
-      <p>
-        Ces expériences lui ont permis d'acquérir une sensibilité
-        à l'architecture qui comprend le site, le programme et les
-        différentes contraintes, notamment techniques, économiques
-        et réglementaires, qu'elle met aujourd'hui au service de ses clients.
-      </p>
+        <p>
+            Ces expériences lui ont permis d'acquérir une sensibilité à l'architecture
+            qui comprend le site, le programme et les différentes contraintes,
+            notamment techniques, économiques et réglementaires, qu'elle met
+            aujourd'hui au service de ses clients.
+        </p>
 
     </section>
 
-  </main>
+</main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
+<footer>
     © 2026 Nadège Hervis Architecture
-  </footer>
+</footer>
 
 </body>
 </html>
