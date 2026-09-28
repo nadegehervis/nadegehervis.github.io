@@ -19,6 +19,120 @@
 <title>Cote et Mer — 40 logements collectifs à Marseille | Nadège Hervis Architecture</title>
 
 <style>
+.site-header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e1d8;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.logo {
+    height: 78px;
+    width: auto;
+    display: block;
+}
+
+.brand {
+    flex: 1;
+}
+
+.brand h1 {
+    margin: 0;
+    color: #8f7e4d;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.brand p {
+    margin: 3px 0 0;
+    color: #777065;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #4f4a42;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8f7e4d;
+}
+
+@media (max-width: 1000px) {
+    .brand h1 {
+        font-size: 19px;
+    }
+
+    nav {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        padding: 12px 20px;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .brand {
+        min-width: 180px;
+    }
+
+    .brand h1 {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .brand p {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        padding-top: 12px;
+        border-top: 1px solid #eeeeee;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+}
+
   
 body {
  margin: 0;
@@ -86,8 +200,34 @@ body {
 
 <body>
 
-<header>
- <a href="index.html">Accueil</a>
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" aria-label="Accueil">
+            <img
+                src="images/logo.jpg"
+                alt="Logo Nadège Hervis Architecture"
+                class="logo"
+            >
+        </a>
+
+        <div class="brand">
+            <h1>
+                Nadège Hervis Architecture
+            </h1>
+
+            <p>
+                Agence d'architecture à Plan-d'Orgon,
+                entre Alpilles et Lubéron
+            </p>
+        </div>
+
+        <nav aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="projets.html" class="active">Projets</a>
+            <a href="agence.html">Agence</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <div class="hero"></div>
