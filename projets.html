@@ -210,6 +210,11 @@
             transition: transform 0.5s ease;
         }
 
+        /* Afficher l'image entière pour laisser apparaître la mention « après travaux ». */
+        .projet-image img.cadrage-apres-travaux {
+            object-fit: contain;
+        }
+
         .projet a:hover .projet-image img {
             transform: scale(1.03);
         }
@@ -562,6 +567,7 @@
                     <img
                         src="images/lesmarguerites/lesmarguerites3.jpg"
                         alt="Rénovation d'un appartement de type 3, Les Marguerites"
+                        class="cadrage-apres-travaux"
                         loading="lazy"
                     >
                 </div>
@@ -590,6 +596,7 @@
                     <img
                         src="images/darkebira/darkebira1.jpg"
                         alt="Rénovation d'un appartement de type 2, Le Dar Kebira"
+                        class="cadrage-apres-travaux"
                         loading="lazy"
                     >
                 </div>
