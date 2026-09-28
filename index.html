@@ -1,452 +1,775 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
 
-    <meta
-        name="description"
-        content="Nadège Hervis Architecture, architecte à Plan-d'Orgon entre Alpilles et Lubéron. Conception, rénovation, réhabilitation, extension et projets de logements."
-    >
+   <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1.0">
 
-    <link
-        rel="canonical"
-        href="https://nadegehervis.github.io/"
-    >
+<meta name="robots" content="index, follow, max-image-preview:large">
+   <meta name="author" content="Nadège Hervis Architecture">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="canonical" href="https://nadegehervis.github.io/">
 
-    <meta property="og:title" content="Architecte à Plan-d'Orgon | Nadège Hervis Architecture">
-    <meta
-        property="og:description"
-        content="Nadège Hervis Architecture, agence d'architecture à Plan-d'Orgon entre Alpilles et Lubéron."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nadegehervis.github.io/">
-    <meta
-        property="og:image"
-        content="https://nadegehervis.github.io/images/logo.jpg"
-    >
+   <!-- SEO local et partage social -->
+   <meta property="og:type" content="website">
+   <meta property="og:locale" content="fr_FR">
+   <meta property="og:site_name" content="Nadège Hervis Architecture">
+   <meta property="og:title" content="Nadège Hervis Architecture — Agence d'architecture à Plan-d'Orgon">
+   <meta property="og:description" content="Agence d'architecture à Plan-d'Orgon entre Alpilles et Lubéron : villas, logements collectifs, ERP, bureaux, constructions neuves, rénovations, réhabilitations et extensions.">
+   <meta property="og:url" content="https://nadegehervis.github.io/">
+   <meta property="og:image" content="https://nadegehervis.github.io/images/logo.jpg">
 
-    <title>Architecte à Plan-d'Orgon | Nadège Hervis Architecture</title>
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:title" content="Nadège Hervis Architecture — Agence d'architecture à Plan-d'Orgon">
+   <meta name="twitter:description" content="Agence d'architecture à Plan-d'Orgon entre Alpilles et Lubéron : conception, rénovation, réhabilitation et extension.">
+   <meta name="twitter:image" content="https://nadegehervis.github.io/images/logo.jpg">
 
-    <style>
+   <!-- Données structurées : activité d'architecture locale -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "ProfessionalService",
+     "name": "Nadège Hervis Architecture",
+     "description": "Agence d'architecture à Plan-d'Orgon entre Alpilles et Lubéron.",
+     "image": "https://nadegehervis.github.io/images/logo.jpg",
+     "url": "https://nadegehervis.github.io/",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "350 avenue des Vergers",
+       "postalCode": "13750",
+       "addressLocality": "Plan-d'Orgon",
+       "addressCountry": "FR"
+     },
+     "areaServed": [
+       "Plan-d'Orgon",
+       "Alpilles",
+       "Lubéron"
+     ],
+     "serviceType": [
+       "Architecture",
+       "Constructions neuves",
+       "Rénovations",
+       "Réhabilitations",
+       "Extensions"
+     ]
+   }
+   </script>
 
-        * {
-            box-sizing: border-box;
-        }
+   <meta name="description" content="Nadège Hervis Architecture, agence d’architecture à Plan-d’Orgon entre Alpilles et Lubéron : villas, logements collectifs, ERP, bureaux, constructions neuves, rénovations, réhabilitations et extensions.">
 
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #4f4a42;
-            background: #ffffff;
-        }
+   <title>Nadège Hervis Architecture — Agence d’architecture à Plan-d’Orgon</title>
 
-        /* =========================
-           HEADER
-        ========================= */
 
-        .site-header {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: 1px solid #e6e1d8;
-            padding: 15px 40px;
-            position: relative;
-            z-index: 10;
-        }
+   <style>
 
-        .header-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 35px;
-        }
+       * {
+           box-sizing: border-box;
+       }
 
-        .logo {
-            height: 78px;
-            width: auto;
-            display: block;
-        }
 
-        .brand {
-            flex: 1;
-        }
+       html {
+           scroll-behavior: smooth;
+       }
 
-        .brand h1 {
-            margin: 0;
-            color: #8f7e4d;
-            font-size: 23px;
-            font-weight: 400;
-            letter-spacing: 2px;
-        }
 
-        .brand p {
-            margin: 3px 0 0;
-            color: #777065;
-            font-size: 12px;
-            letter-spacing: 1.2px;
-        }
+       body {
+           margin: 0;
 
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
+           font-family:
+               Arial,
+               Helvetica,
+               sans-serif;
 
-        nav a {
-            color: #4f4a42;
-            text-decoration: none;
-            font-size: 12px;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            transition: color 0.25s ease;
-        }
+           color: #4f4a42;
 
-        nav a:hover,
-        nav a.active {
-            color: #8f7e4d;
-        }
+           background: #ffffff;
+       }
 
-        /* =========================
-           HERO
-        ========================= */
 
-        .hero {
-            min-height: 650px;
-            background-image:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.25),
-                    rgba(0, 0, 0, 0.25)
-                ),
-                url("images/la seyne/laseynefond1.jpg");
+       img {
+           max-width: 100%;
+       }
 
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 30px;
-        }
 
-        .hero-content {
-            max-width: 1000px;
-            color: #ffffff;
-        }
+       /* =====================================================
+          HEADER
+          ===================================================== */
 
-        .hero h2 {
-            margin: 0 0 25px;
-            font-size: 42px;
-            line-height: 1.25;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-        }
+       .site-header {
 
-        .hero p {
-            margin: 0 auto 30px;
-            max-width: 850px;
-            font-size: 15px;
-            line-height: 1.9;
-            letter-spacing: 1px;
-            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-        }
+           position: relative;
 
-        .hero-button {
-            display: inline-block;
-            padding: 14px 28px;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 11px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            transition:
-                background 0.25s ease,
-                color 0.25s ease;
-        }
+           width: 100%;
 
-        .hero-button:hover {
-            background: #ffffff;
-            color: #4f4a42;
-        }
+           background: #ffffff;
 
-        /* =========================
-           INTRODUCTION
-        ========================= */
+           border-bottom:
+               1px solid #e6e1d8;
 
-        .intro {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 85px 30px 90px;
-            text-align: center;
-        }
+           padding: 15px 40px;
+       }
 
-        .intro h2 {
-            margin: 0 0 25px;
-            color: #8f7e4d;
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-        }
 
-        .intro .quote {
-            margin: 0 auto 30px;
-            color: #777065;
-            font-size: 17px;
-            font-style: italic;
-            line-height: 1.8;
-        }
+       .header-container {
 
-        .intro p:last-child {
-            max-width: 800px;
-            margin: 0 auto;
-            color: #6b655d;
-            font-size: 15px;
-            line-height: 1.9;
-        }
+           max-width: 1400px;
 
-        /* =========================
-           FOOTER
-        ========================= */
+           margin: 0 auto;
 
-        footer {
-            border-top: 1px solid #e6e1d8;
-            padding: 25px 20px;
-            text-align: center;
-            color: #777065;
-            font-size: 11px;
-            letter-spacing: 0.6px;
-        }
+           display: flex;
 
-        /* =========================
-           RESPONSIVE
-        ========================= */
+           align-items: center;
 
-        @media (max-width: 1000px) {
+           justify-content: space-between;
 
-            .brand h1 {
-                font-size: 19px;
-            }
+           gap: 35px;
+       }
 
-            nav {
-                gap: 16px;
-            }
 
-            .hero h2 {
-                font-size: 36px;
-            }
-        }
+       /* LOGO */
 
-        @media (max-width: 700px) {
+       .logo {
 
-            .site-header {
-                padding: 12px 20px;
-            }
+           height: 78px;
 
-            .header-container {
-                flex-wrap: wrap;
-                gap: 12px;
-            }
+           width: auto;
 
-            .logo {
-                height: 60px;
-            }
+           display: block;
+       }
 
-            .brand {
-                min-width: 180px;
-            }
 
-            .brand h1 {
-                font-size: 15px;
-                letter-spacing: 1.5px;
-            }
+       /* IDENTITÉ */
 
-            .brand p {
-                font-size: 9px;
-                letter-spacing: 0.8px;
-            }
+       .brand {
 
-            nav {
-                width: 100%;
-                justify-content: center;
-                padding-top: 12px;
-                border-top: 1px solid #eeeeee;
-                gap: 18px;
-            }
+           flex: 1;
+       }
 
-            nav a {
-                font-size: 9px;
-                letter-spacing: 0.8px;
-            }
 
-            .hero {
-                min-height: 560px;
-                padding: 60px 22px;
-            }
+       .brand h1 {
 
-            .hero h2 {
-                font-size: 28px;
-                letter-spacing: 1.2px;
-            }
+           margin: 0;
 
-            .hero p {
-                font-size: 13px;
-                line-height: 1.8;
-            }
+           color: #8f7e4d;
 
-            .intro {
-                padding: 65px 22px 70px;
-            }
+           font-size: 23px;
 
-            .intro h2 {
-                font-size: 25px;
-            }
+           font-weight: 400;
 
-            .intro .quote {
-                font-size: 15px;
-            }
+           letter-spacing: 2px;
+       }
 
-            .intro p:last-child {
-                font-size: 14px;
-            }
-        }
 
-    </style>
+       .brand p {
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Nadège Hervis Architecture",
-        "url": "https://nadegehervis.github.io/",
-        "logo": "https://nadegehervis.github.io/images/logo.jpg",
-        "telephone": "+33 6 23 59 51 24",
-        "email": "nadege.hervis@yahoo.fr",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "350 avenue des Vergers",
-            "postalCode": "13750",
-            "addressLocality": "Plan-d'Orgon",
-            "addressCountry": "FR"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/nadège-hervis-78b490229"
-        ]
-    }
-    </script>
+           margin: 3px 0 0;
+
+           color: #777065;
+
+           font-size: 12px;
+
+           letter-spacing: 1.2px;
+       }
+
+
+       /* NAVIGATION */
+
+       nav {
+
+           display: flex;
+
+           align-items: center;
+
+           gap: 25px;
+       }
+
+
+       nav a {
+
+           color: #4f4a42;
+
+           text-decoration: none;
+
+           font-size: 12px;
+
+           letter-spacing: 1.2px;
+
+           text-transform: uppercase;
+
+           transition:
+               color 0.25s ease;
+       }
+
+
+       nav a:hover,
+       nav a.active {
+
+           color: #8f7e4d;
+       }
+
+
+       /* =====================================================
+          HERO
+          ===================================================== */
+
+       .hero {
+
+           position: relative;
+
+           min-height:
+               calc(100vh - 109px);
+
+           display: flex;
+
+           flex-direction: column;
+
+           justify-content: center;
+
+           align-items: center;
+
+           text-align: center;
+
+           padding: 100px 30px;
+
+           overflow: hidden;
+
+           background-image:
+
+               linear-gradient(
+                   rgba(255, 255, 255, 0.78),
+                   rgba(255, 255, 255, 0.78)
+               ),
+
+               url("images/la seyne/laseynefond1.jpg");
+
+           background-size: cover;
+
+           background-position: center;
+
+           background-repeat: no-repeat;
+       }
+
+
+       .hero-content {
+
+           position: relative;
+
+           z-index: 1;
+
+           max-width: 1000px;
+       }
+
+
+       .hero h2 {
+
+           margin:
+               0 0 25px;
+
+           color: #8f7e4d;
+
+           font-size:
+               clamp(36px, 5vw, 64px);
+
+           font-weight: 300;
+
+           line-height: 1.15;
+
+           letter-spacing: 1px;
+
+           text-shadow:
+               0 1px 8px
+               rgba(255, 255, 255, 0.6);
+       }
+
+
+       .hero p {
+
+           margin:
+               0 0 38px;
+
+           color: #625b51;
+
+           font-size: 15px;
+
+           line-height: 1.8;
+
+           letter-spacing: 1.5px;
+
+           text-shadow:
+               0 1px 6px
+               rgba(255, 255, 255, 0.6);
+       }
+
+
+       .hero-button {
+
+           display: inline-block;
+
+           padding:
+               15px 30px;
+
+           color: #ffffff;
+
+           background: #8f7e4d;
+
+           text-decoration: none;
+
+           font-size: 11px;
+
+           letter-spacing: 1.8px;
+
+           text-transform: uppercase;
+
+           transition:
+               background 0.25s ease,
+               transform 0.25s ease;
+       }
+
+
+       .hero-button:hover {
+
+           background: #75663e;
+
+           transform:
+               translateY(-2px);
+       }
+
+
+       /* =====================================================
+          INTRODUCTION
+          ===================================================== */
+
+       .intro {
+
+           max-width: 900px;
+
+           margin: 0 auto;
+
+           padding:
+               90px 30px;
+
+           text-align: center;
+       }
+
+
+       .intro h2 {
+
+           margin:
+               0 0 30px;
+
+           color: #8f7e4d;
+
+           font-size: 30px;
+
+           font-weight: 400;
+
+           letter-spacing: 2px;
+
+           text-transform: uppercase;
+       }
+
+
+       .intro-citation {
+
+           margin:
+               0 0 32px;
+
+           color: #8f7e4d;
+
+           font-size: 20px;
+
+           font-style: italic;
+
+           line-height: 1.6;
+       }
+
+
+       .intro-texte {
+
+           margin: 0;
+
+           color: #6b655d;
+
+           font-size: 17px;
+
+           line-height: 1.9;
+       }
+
+
+       /* =====================================================
+          FOOTER
+          ===================================================== */
+
+       footer {
+
+           padding: 30px;
+
+           text-align: center;
+
+           border-top:
+               1px solid #e6e1d8;
+
+           color: #777065;
+
+           font-size: 12px;
+       }
+
+
+       /* =====================================================
+          TABLETTE
+          ===================================================== */
+
+       @media (max-width: 900px) {
+
+           .header-container {
+
+               gap: 20px;
+           }
+
+
+           .brand h1 {
+
+               font-size: 18px;
+
+               letter-spacing: 2px;
+           }
+
+
+           nav {
+
+               gap: 16px;
+           }
+
+       }
+
+
+       /* =====================================================
+          MOBILE
+          ===================================================== */
+
+       @media (max-width: 700px) {
+
+           .site-header {
+
+               padding:
+                   12px 20px;
+           }
+
+
+           .header-container {
+
+               flex-wrap: wrap;
+
+               gap: 12px;
+           }
+
+
+           .logo {
+
+               height: 60px;
+           }
+
+
+           .brand {
+
+               min-width: 180px;
+           }
+
+
+           .brand h1 {
+
+               font-size: 15px;
+
+               letter-spacing: 1.5px;
+           }
+
+
+           .brand p {
+
+               font-size: 9px;
+
+               letter-spacing: 0.8px;
+           }
+
+
+           nav {
+
+               width: 100%;
+
+               justify-content: center;
+
+               padding-top: 12px;
+
+               border-top:
+                   1px solid #eeeeee;
+
+               gap: 18px;
+           }
+
+
+           nav a {
+
+               font-size: 9px;
+
+               letter-spacing: 0.8px;
+           }
+
+
+           .hero {
+
+               min-height:
+                   calc(100vh - 130px);
+
+               padding:
+                   70px 22px;
+           }
+
+
+           .hero h2 {
+
+               font-size: 36px;
+           }
+
+
+           .hero p {
+
+               font-size: 12px;
+           }
+
+
+           .intro {
+
+               padding:
+                   65px 22px;
+           }
+
+
+           .intro h2 {
+
+               font-size: 25px;
+
+               margin-bottom: 28px;
+           }
+
+
+           .intro-citation {
+
+               font-size: 18px;
+
+               margin-bottom: 28px;
+           }
+
+
+           .intro-texte {
+
+               font-size: 15px;
+
+               line-height: 1.8;
+           }
+
+       }
+
+
+       /* =====================================================
+          PETITS ÉCRANS
+          ===================================================== */
+
+       @media (max-width: 480px) {
+
+           .hero h2 {
+
+               font-size: 31px;
+           }
+
+
+           .hero-button {
+
+               padding:
+                   14px 22px;
+           }
+
+
+           .intro-citation {
+
+               font-size: 17px;
+           }
+
+       }
+
+   </style>
 
 </head>
 
+
 <body>
 
-<header class="site-header">
-    <div class="header-container">
 
-        <a href="index.html" aria-label="Accueil">
-            <img
-                src="images/logo.jpg"
-                alt="Logo Nadège Hervis Architecture"
-                class="logo"
-            >
-        </a>
+   <!-- =====================================================
+        EN-TÊTE
+        ===================================================== -->
 
-        <div class="brand">
+   <header class="site-header">
 
-            <h1>
-                Nadège Hervis Architecture
-            </h1>
-
-            <p>
-                Agence d'architecture à Plan-d'Orgon,
-                entre Alpilles et Lubéron
-            </p>
-
-        </div>
-
-        <nav aria-label="Navigation principale">
-
-            <a href="index.html" class="active">
-                Accueil
-            </a>
-
-            <a href="projets.html">
-                Projets
-            </a>
-
-            <a href="agence.html">
-                Agence
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
-        </nav>
-
-    </div>
-</header>
+       <div class="header-container">
 
 
-<main>
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h2>
-                Concevoir des espaces uniques et durables
-            </h2>
-
-            <p>
-                Villas • Logements collectifs • Établissements Recevant du Public
-                • Bureaux • Constructions neuves • Rénovations • Réhabilitations
-                • Extensions
-            </p>
-
-            <a
-                href="projets.html"
-                class="hero-button"
-            >
-                Découvrir nos projets
-            </a>
-
-        </div>
-
-    </section>
+           <a
+               href="index.html"
+               aria-label="Accueil Nadège Hervis Architecture"
 
 
-    <section class="intro">
-
-        <h2>
-            Une architecture à votre écoute
-        </h2>
-
-        <p class="quote">
-            « Derrière chaque projet, il y a une envie, un besoin, un rêve. »
-        </p>
-
-        <p>
-            Nadège Hervis Architecture vous accompagne dans la conception
-            et la réalisation de vos projets, en tenant compte du site,
-            du programme et des contraintes notamment réglementaires,
-            environnementales et budgétaires.
-        </p>
-
-    </section>
-
-</main>
+>
+>
 
 
-<footer>
-    © 2026 Nadège Hervis Architecture - 350 avenue des Vergers - 13750 Plan-d'Orgon
-</footer>
+               <img
+                   src="images/logo.jpg"
+                   alt="Logo Nadège Hervis Architecture"
+                   class="logo"
+
+
+>
+>
+
+
+           </a>
+
+
+           <div class="brand">
+
+               <h1>
+                   Nadège Hervis Architecture
+               </h1>
+
+               <p>
+                   Agence d'architecture à Plan-d'Orgon,
+                   entre Alpilles et Lubéron
+               </p>
+
+           </div>
+
+
+           <nav
+               aria-label="Navigation principale"
+
+
+>
+>
+
+
+               <a
+                   href="index.html"
+                   class="active"
+
+
+>
+>
+
+                   Accueil
+               </a>
+
+               <a href="projets.html">
+                   Projets
+               </a>
+
+               <a href="agence.html">
+                   Agence
+               </a>
+
+               <a href="contact.html">
+                   Contact
+               </a>
+
+           </nav>
+
+       </div>
+
+   </header>
+
+
+   <main>
+
+
+       <section class="hero">
+
+           <div class="hero-content">
+
+               <h2>
+                   Concevoir des espaces
+                   uniques et durables
+               </h2>
+
+               <p>
+                   Villas
+                   •
+                   Logements collectifs
+                   •
+                   Établissements Recevant du Public
+                   •
+                   Bureaux
+                   •
+                   Constructions neuves
+                    •
+                   Rénovations
+                    •
+                   Réhabilitations
+                   •
+                   Extensions
+               </p>
+
+               <a
+                   href="projets.html"
+                   class="hero-button"
+
+
+>
+>
+
+                   Découvrir nos projets
+               </a>
+
+           </div>
+
+       </section>
+
+
+       <section class="intro">
+
+           <h2>
+               Une architecture à votre écoute
+           </h2>
+
+           <p class="intro-citation">
+               « Derrière chaque projet, il y a une envie,
+               un besoin, un rêve. »
+           </p>
+
+           <p class="intro-texte">
+               Nadège Hervis Architecture vous accompagne
+               dans la conception et la réalisation de vos projets,
+               en tenant compte du site, du programme et des contraintes
+               notamment réglementaires, environnementales et budgétaires.
+           </p>
+
+       </section>
+
+   </main>
+
+
+   <footer>
+
+       <p>
+           © 2026 Nadège Hervis Architecture - 350 avenue des Vergers - 13750 Plan-d'Orgon
+       </p>
+
+   </footer>
+
 
 </body>
+
 </html>
