@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -10,504 +8,346 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta
-        name="description"
-        content="Découvrez les projets de Nadège Hervis Architecture : logements collectifs, maisons individuelles et projets de rénovation."
-    >
-
     <title>
-        Nadège Hervis Architecture — Projets
+        Projets d'architecture | Nadège Hervis Architecture
     </title>
 
+    <meta
+        name="description"
+        content="Découvrez les projets de Nadège Hervis Architecture : logements collectifs, maisons individuelles, rénovation et extension."
+    >
+
+    <link
+        rel="canonical"
+        href="https://nadegehervis.github.io/projets.html"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Projets d'architecture | Nadège Hervis Architecture"
+    >
+
+    <meta
+        property="og:description"
+        content="Découvrez une sélection de projets réalisés par Nadège Hervis Architecture : logements collectifs, maisons individuelles, rénovation et extension."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://nadegehervis.github.io/projets.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://nadegehervis.github.io/images/la%20seyne/la%20seyne1.JPG"
+    >
+
+    <meta
+        property="og:locale"
+        content="fr_FR"
+    >
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nadège Hervis Architecture",
+        "url": "https://nadegehervis.github.io/",
+        "logo": "https://nadegehervis.github.io/images/logo.jpg",
+        "telephone": "+33 6 23 59 51 24",
+        "email": "nadege.hervis@yahoo.fr",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "350 avenue des Vergers",
+            "postalCode": "13750",
+            "addressLocality": "Plan-d'Orgon",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/nadège-hervis-78b490229"
+        ]
+    }
+    </script>
 
     <style>
-
         * {
             box-sizing: border-box;
         }
-
 
         html {
             scroll-behavior: smooth;
         }
 
-
         body {
             margin: 0;
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
+            font-family: Arial, Helvetica, sans-serif;
             color: #4f4a42;
-
             background: #ffffff;
         }
-
-
-        img {
-            max-width: 100%;
-        }
-
-
-        /* =====================================================
-           HEADER
-           ===================================================== */
 
         .site-header {
-
             width: 100%;
-
             background: #ffffff;
-
-            border-bottom:
-                1px solid #e6e1d8;
-
+            border-bottom: 1px solid #e6e1d8;
             padding: 15px 40px;
         }
 
-
         .header-container {
-
             max-width: 1400px;
-
             margin: 0 auto;
-
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
-
             gap: 35px;
         }
 
-
         .logo {
-
             height: 78px;
-
             width: auto;
-
             display: block;
         }
 
-
         .brand {
-
             flex: 1;
         }
 
-
         .brand h1 {
-
             margin: 0;
-
             color: #8f7e4d;
-
             font-size: 23px;
-
             font-weight: 400;
-
             letter-spacing: 2px;
         }
 
-
         .brand p {
-
             margin: 3px 0 0;
-
             color: #777065;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
         }
 
-
         nav {
-
             display: flex;
-
             align-items: center;
-
             gap: 25px;
         }
 
-
         nav a {
-
             color: #4f4a42;
-
             text-decoration: none;
-
             font-size: 12px;
-
             letter-spacing: 1.2px;
-
             text-transform: uppercase;
-
-            transition:
-                color 0.25s ease;
+            transition: color 0.25s ease;
         }
-
 
         nav a:hover,
         nav a.active {
-
             color: #8f7e4d;
         }
-
-
-        /* =====================================================
-           PAGE
-           ===================================================== */
 
         .page-header {
-
             max-width: 1200px;
-
             margin: 0 auto;
-
-            padding:
-                80px 30px 45px;
+            padding: 80px 30px 45px;
         }
 
-
         .page-header h2 {
-
-            margin:
-                0 0 25px;
-
+            margin: 0 0 25px;
             color: #8f7e4d;
-
             font-size: 34px;
-
             font-weight: 400;
-
             letter-spacing: 2px;
-
             text-transform: uppercase;
         }
 
-
         .page-header p {
-
             max-width: 800px;
-
             margin: 0;
-
             color: #6b655d;
-
             font-size: 16px;
-
             line-height: 1.8;
         }
 
-
-        /* =====================================================
-           PROJETS
-           ===================================================== */
-
         .projets {
-
-            max-width: 1200px;
-
+            max-width: 1400px;
             margin: 0 auto;
-
-            padding:
-                0 30px 100px;
-
+            padding: 30px 30px 90px;
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap:
-                55px 35px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px 30px;
         }
 
-
-        .project {
-
-            width: 100%;
-
-            background: #ffffff;
-
-            overflow: hidden;
-
-            transition:
-                transform 0.35s ease,
-                box-shadow 0.35s ease;
+        .projet {
+            margin: 0;
         }
 
-
-        .project:hover {
-
-            transform:
-                translateY(-5px);
-
-            box-shadow:
-                0 15px 35px
-                rgba(0, 0, 0, 0.08);
-        }
-
-
-        .project-image {
-
+        .projet a {
             display: block;
+            color: inherit;
+            text-decoration: none;
+        }
 
+        .projet-image {
+            position: relative;
+            overflow: hidden;
+            background: #f5f2ee;
+            aspect-ratio: 4 / 3;
+        }
+
+        .projet-image img {
             width: 100%;
-
-            height: auto;
-
-            object-fit: contain;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.5s ease;
         }
 
-
-        .project-content {
-
-            padding:
-                20px 0 5px;
+        .projet a:hover .projet-image img {
+            transform: scale(1.03);
         }
 
+        .projet-info {
+            padding-top: 18px;
+        }
 
-        .category {
+        .projet-info h3 {
+            margin: 0 0 8px;
+            color: #4f4a42;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
 
-            display: inline-block;
-
-            margin-bottom: 8px;
-
+        .projet-category {
+            margin: 0 0 7px;
             color: #8f7e4d;
-
             font-size: 11px;
-
-            letter-spacing: 1.5px;
-
+            letter-spacing: 1.1px;
             text-transform: uppercase;
         }
 
-
-        .project h3 {
-
-            margin:
-                0 0 8px;
-
-            color: #4f4a42;
-
-            font-size: 18px;
-
-            font-weight: 500;
-
-            line-height: 1.4;
-        }
-
-
-        .project h3 a {
-
-            color: inherit;
-
-            text-decoration: none;
-
-            transition:
-                color 0.25s ease;
-        }
-
-
-        .project h3 a:hover {
-
-            color: #8f7e4d;
-        }
-
-
-        .project p {
-
+        .projet-caption {
             margin: 0;
-
             color: #777065;
-
-            font-size: 14px;
+            font-size: 12px;
+            letter-spacing: 0.8px;
         }
-
-
-        /* =====================================================
-           FOOTER
-           ===================================================== */
 
         footer {
-
-            padding: 30px;
-
+            border-top: 1px solid #e6e1d8;
+            padding: 25px 30px;
             text-align: center;
-
-            border-top:
-                1px solid #e6e1d8;
-
             color: #777065;
-
-            font-size: 12px;
+            font-size: 11px;
+            letter-spacing: 0.7px;
         }
-
-
-        /* =====================================================
-           TABLET
-           ===================================================== */
 
         @media (max-width: 1000px) {
 
             .projets {
-
-                grid-template-columns:
-                    repeat(2, 1fr);
-
-                gap:
-                    45px 30px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 45px 30px;
             }
 
-
             .brand h1 {
-
                 font-size: 19px;
             }
 
-
             nav {
-
                 gap: 16px;
             }
-
         }
-
-
-        /* =====================================================
-           MOBILE
-           ===================================================== */
 
         @media (max-width: 700px) {
 
             .site-header {
-
-                padding:
-                    12px 20px;
+                padding: 12px 20px;
             }
 
-
             .header-container {
-
                 flex-wrap: wrap;
-
                 gap: 12px;
             }
 
-
             .logo {
-
                 height: 60px;
             }
 
-
             .brand {
-
                 min-width: 180px;
             }
 
-
             .brand h1 {
-
                 font-size: 15px;
-
                 letter-spacing: 1.5px;
             }
 
-
             .brand p {
-
                 font-size: 9px;
+                letter-spacing: 0.8px;
             }
 
-
             nav {
-
                 width: 100%;
-
                 justify-content: center;
-
                 padding-top: 12px;
-
-                border-top:
-                    1px solid #eee;
-
+                border-top: 1px solid #eeeeee;
                 gap: 18px;
             }
 
-
             nav a {
-
                 font-size: 9px;
+                letter-spacing: 0.8px;
             }
-
 
             .page-header {
-
-                padding:
-                    60px 22px 35px;
+                padding: 60px 22px 35px;
             }
 
-
             .page-header h2 {
-
                 font-size: 27px;
             }
 
-
             .page-header p {
-
-                font-size: 15px;
+                font-size: 14px;
             }
 
-
             .projets {
-
                 grid-template-columns: 1fr;
-
-                padding:
-                    0 22px 70px;
-
+                padding: 20px 22px 65px;
                 gap: 45px;
             }
 
+            footer {
+                padding: 22px 20px;
+                line-height: 1.7;
+            }
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
 <header class="site-header">
-
     <div class="header-container">
 
-
-        <a
-            href="index.html"
-            aria-label="Accueil"
-        >
-
+        <a href="index.html" aria-label="Accueil">
             <img
                 src="images/logo.jpg"
-                alt="Logo Nadège Hervis Architecture"
+                alt="Logo de Nadège Hervis Architecture"
                 class="logo"
             >
-
         </a>
 
-
         <div class="brand">
-
             <h1>
                 Nadège Hervis Architecture
             </h1>
@@ -516,42 +356,19 @@
                 Agence d'architecture à Plan-d'Orgon,
                 entre Alpilles et Lubéron
             </p>
-
         </div>
 
-
-        <nav
-            aria-label="Navigation principale"
-        >
-
-            <a href="index.html">
-                Accueil
-            </a>
-
-            <a
-                href="projets.html"
-                class="active"
-            >
-                Projets
-            </a>
-
-            <a href="agence.html">
-                Agence
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+        <nav aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="projets.html" class="active">Projets</a>
+            <a href="agence.html">Agence</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
     </div>
-
 </header>
 
-
 <main>
-
 
     <section class="page-header">
 
@@ -560,320 +377,277 @@
         </h2>
 
         <p>
-            Découvrez une sélection de projets réalisés dans les domaines
-            du logement collectif, de la maison individuelle et de la
-            rénovation.
+            Découvrez une sélection de projets réalisés dans
+            les domaines du logement collectif, de la maison
+            individuelle et de la rénovation.
         </p>
 
     </section>
 
-
     <section class="projets">
 
+        <article class="projet">
+            <a href="projet-residence-laseyne.html">
 
-        <!-- PROJET 1 -->
+                <div class="projet-image">
+                    <img
+                        src="images/la seyne/la seyne1.JPG"
+                        alt="Villa Helios, 19 logements collectifs"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/la seyne/la seyne1.JPG"
-                alt="Villa Helios — 19 logements collectifs"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-laseyne.html">
+                    <h3>
                         Réalisation de 19 logements collectifs
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « VILLA HELIOS »
-                </p>
+                    <p class="projet-caption">
+                        « VILLA HELIOS »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-residence-marius.html">
 
-        <!-- PROJET 2 -->
+                <div class="projet-image">
+                    <img
+                        src="images/marius/marius1.JPG"
+                        alt="Marius, 13 logements collectifs et un local professionnel"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/marius/marius1.JPG"
-                alt="Marius — 13 logements collectifs"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-marius.html">
+                    <h3>
                         Réalisation de 13 logements collectifs
                         et 1 local professionnel
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « MARIUS »
-                </p>
+                    <p class="projet-caption">
+                        « MARIUS »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-residence-lamoureale.html">
 
-        <!-- PROJET 3 -->
+                <div class="projet-image">
+                    <img
+                        src="images/la moureale/la moureale 2.jpg"
+                        alt="La Mouréale, 53 logements collectifs sociaux"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/la moureale/la moureale 2.jpg"
-                alt="La Mouréale — 53 logements collectifs sociaux"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-lamoureale.html">
+                    <h3>
                         Réalisation de 53 logements collectifs sociaux
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « LA MOUREALE »
-                </p>
+                    <p class="projet-caption">
+                        « LA MOUREALE »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-residence-coteetmer.html">
 
-        <!-- PROJET 4 -->
+                <div class="projet-image">
+                    <img
+                        src="images/coteetmer/coteetmer1.JPG"
+                        alt="Cote et Mer, 40 logements collectifs"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/coteetmer/coteetmer1.JPG"
-                alt="Cote et mer — 40 logements collectifs"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-coteetmer.html">
+                    <h3>
                         Réalisation de 40 logements collectifs
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « COTE ET MER »
-                </p>
+                    <p class="projet-caption">
+                        « COTE ET MER »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-residence-bellavista.html">
 
-        <!-- PROJET 5 -->
+                <div class="projet-image">
+                    <img
+                        src="images/bellavista/bellavista1.JPG"
+                        alt="Bella Vista, 16 maisons en bande"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/bellavista/bellavista1.JPG"
-                alt="Bella Vista — 16 maisons en bande"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-bellavista.html">
+                    <h3>
                         Réalisation de 16 maisons en bande
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « BELLA VISTA »
-                </p>
+                    <p class="projet-caption">
+                        « BELLA VISTA »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-residence-patiomontolivet.html">
 
-        <!-- PROJET 6 -->
+                <div class="projet-image">
+                    <img
+                        src="images/patiomontolivet/patiomontolivet1.jpg"
+                        alt="Patio Montolivet, 96 logements collectifs"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Logement
+                    </p>
 
-            <img
-                src="images/patiomontolivet/patiomontolivet1.jpg"
-                alt="Patio Montolivet — 96 logements collectifs"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Logement
-                </span>
-
-                <h3>
-                    <a href="projet-residence-patiomontolivet.html">
+                    <h3>
                         Réalisation de 96 logements collectifs
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « PATIO MONTOLIVET »
-                </p>
+                    <p class="projet-caption">
+                        « PATIO MONTOLIVET »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-renovation-lesmarguerites.html">
 
-        <!-- PROJET 7 -->
+                <div class="projet-image">
+                    <img
+                        src="images/lesmarguerites/lesmarguerites3.jpg"
+                        alt="Rénovation d'un appartement de type 3, Les Marguerites"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Rénovation
+                    </p>
 
-            <img
-                src="images/lesmarguerites/lesmarguerites3.jpg"
-                alt="Les Marguerites — rénovation d'un appartement de type 3"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Rénovation
-                </span>
-
-                <h3>
-                    <a href="projet-renovation-lesmarguerites.html">
+                    <h3>
                         Rénovation d'un appartement de type 3
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « LES MARGUERITES »
-                </p>
+                    <p class="projet-caption">
+                        « LES MARGUERITES »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-renovation-darkebira.html">
 
-        <!-- PROJET 8 -->
+                <div class="projet-image">
+                    <img
+                        src="images/darkebira/darkebira1.jpg"
+                        alt="Rénovation d'un appartement de type 2, Le Dar Kebira"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Rénovation
+                    </p>
 
-            <img
-                src="images/darkebira/darkebira1.jpg"
-                alt="Le Dar Kebira — rénovation d'un appartement de type 2"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Rénovation
-                </span>
-
-                <h3>
-                    <a href="projet-renovation-darkebira.html">
+                    <h3>
                         Rénovation d'un appartement de type 2
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « LE DAR KEBIRA »
-                </p>
+                    <p class="projet-caption">
+                        « LE DAR KEBIRA »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
 
+        <article class="projet">
+            <a href="projet-extension-schmidt.html">
 
-        <!-- PROJET 9 -->
+                <div class="projet-image">
+                    <img
+                        src="images/schmidt/extension1.JPG"
+                        alt="Extension d'une maison individuelle à Cabriès"
+                        loading="lazy"
+                    >
+                </div>
 
-        <article class="project">
+                <div class="projet-info">
+                    <p class="projet-category">
+                        Maison individuelle
+                    </p>
 
-            <img
-                src="images/schmidt/extension1.JPG"
-                alt="Extension d'une maison individuelle à Cabriès"
-                class="project-image"
-                loading="lazy"
-            >
-
-            <div class="project-content">
-
-                <span class="category">
-                    Maison individuelle
-                </span>
-
-                <h3>
-                    <a href="projet-extension-schmidt.html">
+                    <h3>
                         Extension d'une maison individuelle
-                    </a>
-                </h3>
+                    </h3>
 
-                <p>
-                    « CABRIES »
-                </p>
+                    <p class="projet-caption">
+                        « CABRIES »
+                    </p>
+                </div>
 
-            </div>
-
+            </a>
         </article>
-
 
     </section>
 
 </main>
 
-
 <footer>
-
-    <p>
-        © 2026 Nadège Hervis Architecture - 350 avenue des Vergers - 13750 Plan-d'Orgon
-    </p>
-
+    © 2026 Nadège Hervis Architecture -
+    350 avenue des Vergers -
+    13750 Plan-d'Orgon
 </footer>
 
-
 </body>
-
 </html>
