@@ -3,14 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Architecte à Plan-d'Orgon | Nadège Hervis Architecture
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
@@ -22,61 +15,22 @@
         href="https://nadegehervis.github.io/"
     >
 
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Architecte à Plan-d'Orgon | Nadège Hervis Architecture"
-    >
-
+    <meta property="og:title" content="Architecte à Plan-d'Orgon | Nadège Hervis Architecture">
     <meta
         property="og:description"
         content="Nadège Hervis Architecture, agence d'architecture à Plan-d'Orgon entre Alpilles et Lubéron."
     >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://nadegehervis.github.io/"
-    >
-
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nadegehervis.github.io/">
     <meta
         property="og:image"
         content="https://nadegehervis.github.io/images/logo.jpg"
     >
 
-    <meta
-        property="og:locale"
-        content="fr_FR"
-    >
-
-    <!-- Données structurées -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Nadège Hervis Architecture",
-        "url": "https://nadegehervis.github.io/",
-        "logo": "https://nadegehervis.github.io/images/logo.jpg",
-        "telephone": "+33 6 23 59 51 24",
-        "email": "nadege.hervis@yahoo.fr",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "350 avenue des Vergers",
-            "postalCode": "13750",
-            "addressLocality": "Plan-d'Orgon",
-            "addressCountry": "FR"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/nadège-hervis-78b490229"
-        ]
-    }
-    </script>
+    <title>Architecte à Plan-d'Orgon | Nadège Hervis Architecture</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -92,11 +46,17 @@
             background: #ffffff;
         }
 
+        /* =========================
+           HEADER
+        ========================= */
+
         .site-header {
             width: 100%;
             background: #ffffff;
             border-bottom: 1px solid #e6e1d8;
             padding: 15px 40px;
+            position: relative;
+            z-index: 10;
         }
 
         .header-container {
@@ -153,14 +113,19 @@
             color: #8f7e4d;
         }
 
+        /* =========================
+           HERO
+        ========================= */
+
         .hero {
-            min-height: 620px;
+            min-height: 650px;
             background-image:
                 linear-gradient(
-                    rgba(0, 0, 0, 0.20),
-                    rgba(0, 0, 0, 0.20)
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)
                 ),
                 url("images/la seyne/laseynefond1.jpg");
+
             background-size: cover;
             background-position: center;
             display: flex;
@@ -171,24 +136,26 @@
         }
 
         .hero-content {
-            max-width: 950px;
+            max-width: 1000px;
             color: #ffffff;
         }
 
         .hero h2 {
             margin: 0 0 25px;
             font-size: 42px;
+            line-height: 1.25;
             font-weight: 400;
             letter-spacing: 2px;
-            line-height: 1.25;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
         }
 
-        .hero-services {
-            margin: 0 auto 35px;
+        .hero p {
+            margin: 0 auto 30px;
             max-width: 850px;
             font-size: 15px;
             line-height: 1.9;
-            letter-spacing: 0.6px;
+            letter-spacing: 1px;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
         }
 
         .hero-button {
@@ -197,8 +164,8 @@
             border: 1px solid #ffffff;
             color: #ffffff;
             text-decoration: none;
-            font-size: 12px;
-            letter-spacing: 1.4px;
+            font-size: 11px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             transition:
                 background 0.25s ease,
@@ -210,27 +177,31 @@
             color: #4f4a42;
         }
 
+        /* =========================
+           INTRODUCTION
+        ========================= */
+
         .intro {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 90px 30px;
+            padding: 85px 30px 90px;
             text-align: center;
         }
 
         .intro h2 {
-            margin: 0 0 30px;
+            margin: 0 0 25px;
             color: #8f7e4d;
             font-size: 30px;
             font-weight: 400;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
 
         .intro .quote {
-            margin: 0 0 25px;
-            color: #8f7e4d;
-            font-size: 20px;
+            margin: 0 auto 30px;
+            color: #777065;
+            font-size: 17px;
             font-style: italic;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         .intro p:last-child {
@@ -241,14 +212,22 @@
             line-height: 1.9;
         }
 
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
             border-top: 1px solid #e6e1d8;
-            padding: 25px 30px;
+            padding: 25px 20px;
             text-align: center;
             color: #777065;
             font-size: 11px;
-            letter-spacing: 0.7px;
+            letter-spacing: 0.6px;
         }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
 
         @media (max-width: 1000px) {
 
@@ -308,22 +287,22 @@
             }
 
             .hero {
-                min-height: 520px;
+                min-height: 560px;
                 padding: 60px 22px;
             }
 
             .hero h2 {
                 font-size: 28px;
-                letter-spacing: 1.5px;
+                letter-spacing: 1.2px;
             }
 
-            .hero-services {
+            .hero p {
                 font-size: 13px;
                 line-height: 1.8;
             }
 
             .intro {
-                padding: 65px 22px;
+                padding: 65px 22px 70px;
             }
 
             .intro h2 {
@@ -331,19 +310,38 @@
             }
 
             .intro .quote {
-                font-size: 18px;
+                font-size: 15px;
             }
 
             .intro p:last-child {
                 font-size: 14px;
             }
-
-            footer {
-                padding: 22px 20px;
-                line-height: 1.7;
-            }
         }
+
     </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nadège Hervis Architecture",
+        "url": "https://nadegehervis.github.io/",
+        "logo": "https://nadegehervis.github.io/images/logo.jpg",
+        "telephone": "+33 6 23 59 51 24",
+        "email": "nadege.hervis@yahoo.fr",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "350 avenue des Vergers",
+            "postalCode": "13750",
+            "addressLocality": "Plan-d'Orgon",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/nadège-hervis-78b490229"
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -354,12 +352,13 @@
         <a href="index.html" aria-label="Accueil">
             <img
                 src="images/logo.jpg"
-                alt="Logo de Nadège Hervis Architecture"
+                alt="Logo Nadège Hervis Architecture"
                 class="logo"
             >
         </a>
 
         <div class="brand">
+
             <h1>
                 Nadège Hervis Architecture
             </h1>
@@ -368,17 +367,32 @@
                 Agence d'architecture à Plan-d'Orgon,
                 entre Alpilles et Lubéron
             </p>
+
         </div>
 
         <nav aria-label="Navigation principale">
-            <a href="index.html" class="active">Accueil</a>
-            <a href="projets.html">Projets</a>
-            <a href="agence.html">Agence</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="index.html" class="active">
+                Accueil
+            </a>
+
+            <a href="projets.html">
+                Projets
+            </a>
+
+            <a href="agence.html">
+                Agence
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
         </nav>
 
     </div>
 </header>
+
 
 <main>
 
@@ -390,11 +404,10 @@
                 Concevoir des espaces uniques et durables
             </h2>
 
-            <p class="hero-services">
-                Villas • Logements collectifs •
-                Établissements Recevant du Public •
-                Bureaux • Constructions neuves •
-                Rénovations • Réhabilitations • Extensions
+            <p>
+                Villas • Logements collectifs • Établissements Recevant du Public
+                • Bureaux • Constructions neuves • Rénovations • Réhabilitations
+                • Extensions
             </p>
 
             <a
@@ -408,6 +421,7 @@
 
     </section>
 
+
     <section class="intro">
 
         <h2>
@@ -415,15 +429,13 @@
         </h2>
 
         <p class="quote">
-            « Derrière chaque projet, il y a une envie,
-            un besoin, un rêve. »
+            « Derrière chaque projet, il y a une envie, un besoin, un rêve. »
         </p>
 
         <p>
-            Nadège Hervis Architecture vous accompagne
-            dans la conception et la réalisation de vos
-            projets, en tenant compte du site, du programme
-            et des contraintes notamment réglementaires,
+            Nadège Hervis Architecture vous accompagne dans la conception
+            et la réalisation de vos projets, en tenant compte du site,
+            du programme et des contraintes notamment réglementaires,
             environnementales et budgétaires.
         </p>
 
@@ -431,10 +443,9 @@
 
 </main>
 
+
 <footer>
-    © 2026 Nadège Hervis Architecture -
-    350 avenue des Vergers -
-    13750 Plan-d'Orgon
+    © 2026 Nadège Hervis Architecture - 350 avenue des Vergers - 13750 Plan-d'Orgon
 </footer>
 
 </body>
