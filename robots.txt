@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nadegehervis.github.io/sitemap.xml
+Sitemap: https://nadegehervisarchitecture.fr/sitemap.xml
